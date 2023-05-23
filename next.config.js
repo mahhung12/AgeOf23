@@ -12,6 +12,7 @@ const nextConfig = {
   experimental: {
     serverComponents: true,
   },
+  pagesDir: "src/app",
   async rewrites() {
     return [
       {
