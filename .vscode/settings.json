@@ -1,0 +1,94 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.detectIndentation": true,
+  "editor.fontLigatures": true,
+  "editor.snippetSuggestions": "top",
+  "eslint.format.enable": true,
+  "editor.wordBasedSuggestions": false,
+  "editor.suggest.localityBonus": true,
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.suggestSelection": "recentlyUsed",
+    "editor.suggest.showKeywords": false
+  },
+  "files.defaultLanguage": "{activeEditorLanguage}",
+  "javascript.validate.enable": false,
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/coverage": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.build": true,
+    "**/.gh-pages": true,
+    "**/*.typegen.ts": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+  "eslint.options": {
+    "overrideConfig": {
+      "env": {
+        "browser": true,
+        "jest/globals": true,
+        "es6": true
+      },
+      "parserOptions": {
+        "ecmaVersion": 2019,
+        "sourceType": "module",
+        "ecmaFeatures": {
+          "jsx": true
+        }
+      },
+      "rules": {
+        "no-debugger": "off"
+      }
+    }
+  },
+  "workbench.iconTheme": "vscode-icons",
+  "breadcrumbs.enabled": true,
+  "grunt.autoDetect": "off",
+  "gulp.autoDetect": "off",
+  "npm.runSilent": true,
+  "explorer.confirmDragAndDrop": false,
+  "editor.formatOnPaste": false,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.smoothScrolling": true,
+  "php.suggest.basic": false,
+  "cSpell.words": [
+    "Antd",
+    "anticon",
+    "bignumber",
+    "Blockhash",
+    "delisted",
+    "Devnet",
+    "flipkingx",
+    "FLKPX",
+    "FLPKX",
+    "gflipkingx",
+    "GFLPKX",
+    "hookform",
+    "INFT",
+    "IPFS",
+    "Keypair",
+    "LAMPORTS",
+    "lastest",
+    "pocker",
+    "RAKEBACK",
+    "Sider",
+    "solana",
+    "solscan",
+    "Sysvar",
+    "webp",
+    "zustand"
+  ],
+  "[xml]": {
+    "editor.defaultFormatter": "fabianlauer.vs-code-xml-format"
+  },
+  "typescript.tsdk": "node_modules/typescript/lib"
+}
