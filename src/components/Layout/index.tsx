@@ -1,6 +1,8 @@
-import classNames from "classnames";
 import type { FC, PropsWithChildren } from "react";
+import classNames from "classnames";
+
 import AppHeader from "./AppHeader";
+import AppSider from "./AppSider";
 
 const AppLayout: FC<
   PropsWithChildren<{
@@ -9,10 +11,12 @@ const AppLayout: FC<
 > = ({ children, className }) => (
   <>
     <div className={classNames("layout-container", className)}>
-      <>
+      <AppSider />
+
+      <div className="main-layout">
         <AppHeader />
         {children}
-      </>
+      </div>
     </div>
   </>
 );

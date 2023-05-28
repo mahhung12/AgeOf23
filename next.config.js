@@ -9,10 +9,6 @@ const nextConfig = {
     deviceSizes: [375, 720, 1080],
     imageSizes: [300, 600, 900],
   },
-  experimental: {
-    serverComponents: true,
-  },
-  pagesDir: "src/app",
   async rewrites() {
     return [
       {
