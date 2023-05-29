@@ -11,8 +11,6 @@ const AppHeader = () => {
 
   const handleSignIn = () => signIn("google", callbackUrl);
 
-  console.log("session", session);
-
   return (
     <div className="app-header">
       {session ? (

@@ -1,2 +1,62 @@
 .app-sider {
+  height: 100vh;
+
+  .ant-layout-sider {
+    height: 100%;
+    position: relative;
+
+    .ant-layout-sider-children {
+      position: relative;
+      height: 100%;
+
+      background: #ffffff;
+      border-right: 1px solid #efefef;
+
+      .app-sider__status {
+        position: absolute;
+        bottom: 36px;
+        left: 50%;
+        transform: translate(-50%, 0);
+
+        p {
+          display: flex;
+          align-items: center;
+          gap: 0 8px;
+
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 140%;
+          color: #25253d;
+
+          &:hover {
+            cursor: pointer;
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+
+    .ant-layout-sider-trigger {
+      position: absolute;
+      top: 50px;
+      right: 0;
+
+      width: fit-content !important;
+      transform: translate(50%, 0);
+
+      padding: 10px;
+      border-radius: 100rem;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background: #acb0ac;
+
+      &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+      }
+    }
+  }
 }

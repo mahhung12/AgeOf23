@@ -14,7 +14,7 @@ const AppLayout: FC<
       <AppSider />
 
       <div className="main-layout">
-        <AppHeader />
+        {/* <AppHeader /> */}
         {children}
       </div>
     </div>
