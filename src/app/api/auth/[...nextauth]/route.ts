@@ -1,5 +1,6 @@
 import { NextAuthOptions } from "next-auth";
 import NextAuth from "next-auth/next";
+
 import GoogleProvider from "next-auth/providers/google";
 
 const authOptions: NextAuthOptions = {
@@ -9,9 +10,6 @@ const authOptions: NextAuthOptions = {
       clientSecret: process.env.CLIENT_SECRET_KEY || "",
     }),
   ],
-  session: {
-    maxAge: 24 * 60 * 60, // a day
-  },
   secret: "ChelseaFootballClub",
   pages: {
     signIn: "/signin",

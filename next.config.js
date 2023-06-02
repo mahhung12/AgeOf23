@@ -5,7 +5,7 @@ const nextConfig = {
   pageExtensions: ["js", "jsx", "ts", "tsx"],
   images: {
     disableStaticImages: true,
-    domains: ["images.unsplash.com"],
+    domains: ["images.unsplash.com", "lh3.googleusercontent.com"],
     deviceSizes: [375, 720, 1080],
     imageSizes: [300, 600, 900],
   },
