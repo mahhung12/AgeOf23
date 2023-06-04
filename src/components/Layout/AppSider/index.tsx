@@ -45,7 +45,7 @@ const AppSider = (props: Props) => {
     ];
 
     return siderMenus;
-  }, [router]);
+  }, [router, navigate]);
 
   return (
     <div className="app-sider">

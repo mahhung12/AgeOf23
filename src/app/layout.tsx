@@ -2,7 +2,7 @@ import AppLayout from "@/components/Layout";
 import { Inter } from "next/font/google";
 import "../styles/_app.scss";
 
-import { CaveatFont } from "@/styles/fonts";
+// import { CaveatFont } from "@/styles/fonts";
 import Provider from "../components/SessionProvider/Provider";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={CaveatFont.className}>
+    <html lang="en">
       <body className={inter.className}>
         <Provider>
           <AppLayout>{children}</AppLayout>
