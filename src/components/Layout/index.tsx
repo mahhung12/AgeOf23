@@ -4,6 +4,7 @@ import classNames from "classnames";
 import type { FC, PropsWithChildren } from "react";
 
 import { useSession } from "next-auth/react";
+import PrivateLayout from "../PrivateLayout";
 import AppSider from "./AppSider";
 
 const AppLayout: FC<
@@ -18,9 +19,11 @@ const AppLayout: FC<
       <AppSider />
 
       {session ? (
-        <div className="main-layout">{children}</div>
+        <div className="main-layout">
+          <PrivateLayout>{children}</PrivateLayout>
+        </div>
       ) : (
-        <div>Sign-in to view this page</div>
+        <>Sign-in to view this page</>
       )}
     </div>
   );

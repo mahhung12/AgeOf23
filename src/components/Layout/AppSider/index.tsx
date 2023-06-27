@@ -1,32 +1,22 @@
 "use client";
 
-import LogoutIcon from "@/public/icons/LogoutIcon";
-import { Layout, Menu, Space, Typography } from "antd";
-import { signIn, signOut, useSession } from "next-auth/react";
-import Image from "next/legacy/image";
+import UserCard from "@/components/UserCard";
+import { Layout, Menu } from "antd";
+import { useSession } from "next-auth/react";
 import Link from "next/link";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { useMemo, useState } from "react";
-
-type Props = {};
+import RegisterUser from "./RegisterUser";
 
 const { Sider } = Layout;
-const { Paragraph, Text } = Typography;
 
-const AppSider = (props: Props) => {
+const AppSider = () => {
   const router = useRouter();
-  const { data: session, status } = useSession() as any;
+  const { data: session } = useSession() as any;
 
   const [openKeys, setOpenKeys] = useState<string[]>([]);
 
-  const searchParams = useSearchParams();
-  const callbackUrl = searchParams?.get("callbackUrl") as any;
-
   const navigate = (link: string) => () => router.push(link);
-
-  const handleSignIn = () => signIn("google", callbackUrl);
-
-  // const handleSignIn = () => router.push("/sign-in");
 
   const siderMenus = useMemo(() => {
     const siderMenus = [
@@ -53,25 +43,7 @@ const AppSider = (props: Props) => {
         <>
           <div className="app-sider__account">
             {session ? (
-              <>
-                <div className="account-avatar">
-                  <Image
-                    src={session?.user?.image}
-                    alt={session?.user?.name}
-                    layout="fill"
-                    objectFit="cover"
-                  />
-                </div>
-
-                <div className="account-information">
-                  <Paragraph ellipsis={{ tooltip: true }} className="name">
-                    {session?.user?.name}
-                  </Paragraph>
-                  <Paragraph ellipsis={{ tooltip: true }} className="email">
-                    {session?.user?.email}
-                  </Paragraph>
-                </div>
-              </>
+              <UserCard userData={session?.user} />
             ) : (
               <div className="not-signin">Age Of 23</div>
             )}
@@ -87,18 +59,7 @@ const AppSider = (props: Props) => {
             />
           )}
 
-          <Space className="app-sider__status">
-            {session?.user ? (
-              <span className="sign-out-btn" onClick={() => signOut()}>
-                <LogoutIcon />
-                Sign out
-              </span>
-            ) : (
-              <span className="sign-in-btn" onClick={handleSignIn}>
-                Sign in
-              </span>
-            )}
-          </Space>
+          <RegisterUser />
         </>
       </Sider>
     </div>
