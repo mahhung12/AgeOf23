@@ -5,7 +5,7 @@ import { Layout, Menu } from "antd";
 import { useSession } from "next-auth/react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useMemo, useState } from "react";
+import React, { useMemo, useState } from "react";
 import RegisterUser from "./RegisterUser";
 
 const { Sider } = Layout;
@@ -40,7 +40,7 @@ const AppSider = () => {
   return (
     <div className="app-sider">
       <Sider width={266} className="app-sider">
-        <>
+        <React.Fragment>
           <div className="app-sider__account">
             {session ? (
               <UserCard userData={session?.user} />
@@ -60,7 +60,7 @@ const AppSider = () => {
           )}
 
           <RegisterUser />
-        </>
+        </React.Fragment>
       </Sider>
     </div>
   );
