@@ -1,21 +1,20 @@
+import Link from "next/link";
 import { FC } from "react";
 
 const OpeningHeader: FC = () => {
   return (
-    <header className="p-8">
-      <h1 className="text-6xl font-bold text-gray-400">
-        <a href="/" className="flex flex-nowrap gap-2 self-end">
+    <header className="p-8 mt-5">
+      <h1 className="text-7xl font-bold text-black transition duration-300 ease-in-out hover:text-opacity-60">
+        <Link
+          href="/"
+          className="flex flex-nowrap gap-2 self-end align-middle justify-center"
+        >
           Age of <b className="text-xl font-semibold self-end">23</b>
-        </a>
+        </Link>
       </h1>
-      <h2
-        className="
-        text-2xl font-regular  mt-4
-        lg:flex justify-between items-center
-        "
-      >
+      <h2 className="text-2xl font-regular mt-4 lg:flex justify-between items-center">
         <div>
-          What do <b>"people do"</b> at the age of 23?
+          What do <b>&#8220;people do&#8221;</b> at the age of <u>23</u>?
         </div>
       </h2>
     </header>

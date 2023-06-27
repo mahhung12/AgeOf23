@@ -4,7 +4,7 @@ import React, { FC, PropsWithChildren } from "react";
 
 const AuthenticateModal: FC<
   PropsWithChildren<{
-    title: string;
+    title?: string;
     visible: boolean;
     className?: string;
     centered?: boolean;
