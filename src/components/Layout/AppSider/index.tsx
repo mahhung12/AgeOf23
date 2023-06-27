@@ -1,6 +1,6 @@
 "use client";
 
-import UserCard from "@/components/UserCard";
+import OpeningHeader from "@/components/HeaderOpening";
 import { Layout, Menu } from "antd";
 import { useSession } from "next-auth/react";
 import Link from "next/link";
@@ -38,21 +38,14 @@ const AppSider = () => {
   }, [router, navigate]);
 
   return (
-    <div className="app-sider sticky top-0 overflow-y-scroll">
-      <Sider width={266} className="app-sider">
+    <div className="max-w-sm w-full sticky top-0">
+      <Sider width={355}>
         <React.Fragment>
-          <div className="app-sider__account">
-            {session ? (
-              <UserCard userData={session?.user} />
-            ) : (
-              <div className="not-signin">Age Of 23</div>
-            )}
-          </div>
+          <OpeningHeader />
 
           {session && (
             <Menu
               mode="inline"
-              className="app-sider__menu"
               items={siderMenus}
               openKeys={openKeys}
               onOpenChange={setOpenKeys}
