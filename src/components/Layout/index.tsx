@@ -15,7 +15,7 @@ const AppLayout: FC<
   const { data: session } = useSession();
 
   return (
-    <div className={classNames("layout-container", className)}>
+    <div className={className}>
       <AppSider />
 
       {session ? (

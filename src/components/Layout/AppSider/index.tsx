@@ -38,7 +38,7 @@ const AppSider = () => {
   }, [router, navigate]);
 
   return (
-    <div className="app-sider">
+    <div className="app-sider sticky top-0 overflow-y-scroll">
       <Sider width={266} className="app-sider">
         <React.Fragment>
           <div className="app-sider__account">

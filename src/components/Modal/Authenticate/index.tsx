@@ -4,6 +4,7 @@ import React, { FC, PropsWithChildren } from "react";
 
 const AuthenticateModal: FC<
   PropsWithChildren<{
+    title: string;
     visible: boolean;
     className?: string;
     centered?: boolean;
@@ -11,9 +12,14 @@ const AuthenticateModal: FC<
 
     onClose: () => void;
   }>
-> = ({ visible, className, onClose, ...props }) => {
+> = ({ title, visible, className, onClose, ...props }) => {
   return (
-    <Modal title="Basic Modal" open={visible} onCancel={onClose} {...props}>
+    <Modal
+      title={title || "Modal"}
+      open={visible}
+      onCancel={onClose}
+      {...props}
+    >
       <div className={classNames("modal-container", className)}>
         <p>Some contents...</p>
         <p>Some contents...</p>

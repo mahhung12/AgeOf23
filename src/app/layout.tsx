@@ -21,7 +21,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Provider>
-          <AppLayout>{children}</AppLayout>
+          <AppLayout className="max-w-[1280px] w-full m-auto">
+            {children}
+          </AppLayout>
         </Provider>
       </body>
     </html>
