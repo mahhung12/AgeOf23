@@ -10,8 +10,17 @@ const ButtonLink: FC<
     icon: string;
     small?: string;
     dark?: string;
+    external?: boolean;
   }>
-> = ({ href, icon, small = false, dark = false, children, ...props }) => {
+> = ({
+  href,
+  icon,
+  small = false,
+  dark = false,
+  external = false,
+  children,
+  ...props
+}) => {
   const buttonClassNames = classNames(
     "inline-flex select-none items-center border dark:!shadow-none w-full h-full min-h-[54px]",
     !small
@@ -23,13 +32,13 @@ const ButtonLink: FC<
   );
 
   const iconClassNames = classNames(
-    "flex-shrink-0 fill-current object-contain w-6 h-6",
+    "flex-shrink-0 fill-current object-contain",
     !small ? "h-6 w-6" : "h-4 w-4",
     !dark ? "text-gray-700 dark:text-gray-300" : "text-gray-300"
   );
 
   return (
-    <Link href={href}>
+    <Link href={href} target={external ? "_blank" : undefined}>
       <Button
         icon={<IconList icon={icon} className={iconClassNames} />}
         className={buttonClassNames}

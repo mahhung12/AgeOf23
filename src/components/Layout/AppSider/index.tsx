@@ -9,7 +9,7 @@ const { Sider } = Layout;
 
 const AppSider = () => {
   return (
-    <div className="max-w-sm w-full sticky top-0">
+    <div className="max-w-sm w-full sticky top-0 overflow-y-hidden">
       <Sider width={355}>
         <React.Fragment>
           <OpeningHeader />
