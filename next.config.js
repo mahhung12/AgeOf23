@@ -6,8 +6,8 @@ const nextConfig = {
   images: {
     disableStaticImages: true,
     domains: ["images.unsplash.com", "lh3.googleusercontent.com"],
-    imageSizes: [300, 600, 900],
     deviceSizes: [375, 720, 1080],
+    imageSizes: [300, 600, 900],
   },
   async rewrites() {
     return [
