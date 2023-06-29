@@ -1,13 +1,7 @@
 import React from "react";
-import Student from "./student";
 
 const Hello = () => {
-  return (
-    <div>
-      Hello
-      <Student />
-    </div>
-  );
+  return <></>;
 };
 
 export default Hello;

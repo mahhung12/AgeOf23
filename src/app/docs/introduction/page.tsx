@@ -1,9 +1,9 @@
-"use client";
+import IntroductionPage from "@/components/pages/docs/introduction";
 
-import React from "react";
-
-const IntroductionPage = () => {
-  return <div>IntroductionPag eeeee</div>;
-};
-
-export default IntroductionPage;
+export default function Introduction() {
+  return (
+    <main>
+      <IntroductionPage />
+    </main>
+  );
+}

@@ -14,7 +14,9 @@ const AppLayout: FC<PropsWithChildren<{}>> = ({ children }) => {
     <div className="max-w-[1600px] w-full h-full m-auto flex align-middle gap-8">
       <AppSider />
 
-      {session ? <PrivateLayout>{children}</PrivateLayout> : <HomePage />}
+      {children}
+
+      {/* {session ? <PrivateLayout>{children}</PrivateLayout> : children} */}
     </div>
   );
 };
