@@ -3,7 +3,8 @@ import { Inter } from "next/font/google";
 import "../styles/_app.scss";
 
 // import { CaveatFont } from "@/styles/fonts";
-import Provider from "../components/SessionProvider/Provider";
+import Provider from "@/components/SessionProvider/Provider";
+import "@/styles/_app.scss";
 
 const inter = Inter({ subsets: ["latin"] });
 
