@@ -1,9 +1,10 @@
 import ButtonLink from "@/components/ButtonLink/index,";
 import { FC } from "react";
+import RegisterUser from "../RegisterUser";
 
 const SiderMenu: FC<{}> = () => {
   return (
-    <div className="mt-8 px-8 flex flex-col space-y-4">
+    <div className="mt-8 flex flex-col space-y-4">
       <ButtonLink icon="folder" href="/docs/introduction">
         Documentation
       </ButtonLink>
@@ -23,6 +24,8 @@ const SiderMenu: FC<{}> = () => {
       <ButtonLink icon="help" href="/">
         About
       </ButtonLink>
+
+      <RegisterUser />
     </div>
   );
 };

@@ -14,7 +14,7 @@ const RegisterUser = () => {
   const searchParams = useSearchParams();
   const callbackUrl = searchParams?.get("callbackUrl") as any;
 
-  // const handleSignIn = () =>  signIn("google", callbackUrl)
+  const handleSignIn = () => signIn("google", callbackUrl);
 
   const handleOpenRegisterModal = () =>
     setVisibleAuthenticateModal(!visibleAuthenticateModal);
@@ -22,28 +22,31 @@ const RegisterUser = () => {
   const handleCloseRegisterModal = () => setVisibleAuthenticateModal(false);
 
   return (
-    <Space className="app-sider__status">
+    <Space className=" mt-5">
       {session?.user ? (
-        <span className="sign-out-btn" onClick={() => signOut()}>
+        <div
+          className="flex flex-nowrap gap-4 cursor-pointer"
+          onClick={() => signOut()}
+        >
           <LogoutIcon />
           Sign out
-        </span>
+        </div>
       ) : (
-        <Space direction="horizontal" style={{ width: "100%" }} size={16}>
-          <span className="sign-in-btn" onClick={handleOpenRegisterModal}>
-            Sign in
-          </span>
-          <span className="sign-in-btn" onClick={handleOpenRegisterModal}>
-            Sign Up
-          </span>
+        <Space
+          direction="horizontal"
+          className="w-full cursor-pointer"
+          size={16}
+        >
+          <div onClick={handleSignIn}>Sign in</div>
+          {/* <div onClick={handleSignIn}>Sign Up</div> */}
         </Space>
       )}
 
-      <AuthenticateModal
+      {/* <AuthenticateModal
         visible={visibleAuthenticateModal}
         onClose={handleCloseRegisterModal}
         centered
-      />
+      /> */}
     </Space>
   );
 };

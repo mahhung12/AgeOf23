@@ -13,7 +13,7 @@ const PrivateLayout: FC<PropsWithChildren> = ({ children }) => {
   )
     router.push("/");
 
-  return <div className="main-layout">{children}</div>;
+  return <div className="main-layout w-full mt-5 py-8">{children}</div>;
 };
 
 export default PrivateLayout;

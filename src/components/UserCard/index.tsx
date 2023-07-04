@@ -1,31 +1,25 @@
-import { Typography } from "antd";
 import Image from "next/legacy/image";
-
-import React from "react";
-
-const { Paragraph, Text } = Typography;
 
 const UserCard = ({ userData }: any) => {
   return (
-    <React.Fragment>
-      <div className="account-avatar">
+    <div className="flex flex-nowrap gap-5 align-middle">
+      <div className="rounded-lg overflow-hidden relative w-20 h-20">
         <Image
-          src={userData.image}
-          alt={userData.name}
+          src={userData?.image}
+          alt={userData?.name}
           layout="fill"
+          quality={100}
+          placeholder="empty"
+          blurDataURL={userData?.image}
           objectFit="cover"
         />
       </div>
 
-      <div className="account-information">
-        <Paragraph ellipsis={{ tooltip: true }} className="name">
-          {userData.name}
-        </Paragraph>
-        <Paragraph ellipsis={{ tooltip: true }} className="email">
-          {userData.email}
-        </Paragraph>
+      <div className="flex align-middle flex-col justify-center gap-2">
+        <div className="font-semibold text-lg">{userData.name}</div>
+        <div className="font-light">{userData.email}</div>
       </div>
-    </React.Fragment>
+    </div>
   );
 };
 
