@@ -1,12 +1,5 @@
-import Settings from "./settings";
-
 const Left = () => {
-  return (
-    <div>
-      Left
-      <Settings />
-    </div>
-  );
+  return <div>Left</div>;
 };
 
 export default Left;

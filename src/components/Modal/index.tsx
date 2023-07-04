@@ -8,10 +8,11 @@ const AppModal: FC<
     className?: string;
     centered?: boolean;
     footer?: boolean;
+    title?: string;
 
     onClose: () => void;
   }>
-> = ({ children, className, footer = null, ...props }) => {
+> = ({ children, className, title = "App Modal", footer = null, ...props }) => {
   return (
     <Modal {...props}>
       <div className={classNames("app-modal", className)}>{children}</div>
