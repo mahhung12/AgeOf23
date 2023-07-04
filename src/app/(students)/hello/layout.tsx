@@ -1,12 +1,12 @@
 export default function Layout(props: {
   children: React.ReactNode;
   left: React.ReactNode;
+  right: React.ReactNode;
 }) {
   return (
-    <div>
-      {props.children}
-      {/* {props.right} */}
-      123123
+    <div className="flex flex-wrap">
+      {props.left}
+      {props.right}
     </div>
   );
 }

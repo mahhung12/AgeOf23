@@ -1,7 +1,12 @@
-import React from "react";
+import Settings from "./settings";
 
 const Left = () => {
-  return <div>Left</div>;
+  return (
+    <div>
+      Left
+      <Settings />
+    </div>
+  );
 };
 
 export default Left;
