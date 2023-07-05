@@ -1,9 +1,3 @@
-import IntroductionPage from "@/components/pages/docs/introduction";
-
-export default function Introduction() {
-  return (
-    <main>
-      <IntroductionPage />
-    </main>
-  );
+export default function Home({ children }: { children: React.ReactNode }) {
+  return <main>{children}</main>;
 }

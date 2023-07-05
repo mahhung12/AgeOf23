@@ -2,12 +2,22 @@
 
 const path = require("path");
 
+const withMDX = require("@next/mdx")({
+  extension: /\.mdx?$/,
+  options: {
+    remarkPlugins: [],
+    rehypePlugins: [],
+    // If you use `MDXProvider`, uncomment the following line.
+    providerImportSource: "@mdx-js/react",
+  },
+});
+
 const nextConfig = {
   reactStrictMode: true,
-  pageExtensions: ["js", "jsx", "ts", "tsx"],
+  pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"],
   images: {
     disableStaticImages: true,
-    domains: ["images.unsplash.com", "lh3.googleusercontent.com"],
+    domains: ["lh3.googleusercontent.com"],
     imageSizes: [300, 600, 900],
     deviceSizes: [375, 720, 1080],
   },
@@ -24,4 +34,4 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+module.exports = withMDX(nextConfig);

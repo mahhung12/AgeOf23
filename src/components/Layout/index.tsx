@@ -11,17 +11,16 @@ const AppLayout: FC<PropsWithChildren<{}>> = ({ children }) => {
   const { data: session } = useSession();
 
   return (
-    <div className="max-w-[1600px] w-full h-full m-auto flex align-middle gap-10">
+    <div className="max-w-[1600px] w-full h-full m-auto flex align-middle gap-14 overflow-hidden">
       <AppSider />
-
-      {children}
 
       {session ? (
         <PrivateLayout>
-          <HomePage />
+          {/* <HomePage /> */}
+          User already logged in
         </PrivateLayout>
       ) : (
-        <div>Welcome text perform here</div>
+        <div className="w-full">{children}</div>
       )}
     </div>
   );

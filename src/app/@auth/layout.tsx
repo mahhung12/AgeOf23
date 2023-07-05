@@ -7,7 +7,7 @@ export default async function Layout(props: {
   return (
     <>
       {/* ... */}
-      <AppModal>{props.authModal}</AppModal>
+      {/* <AppModal>{props.authModal}</AppModal> */}
     </>
   );
 }
