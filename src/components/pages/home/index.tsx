@@ -8,8 +8,8 @@ const HomePage: FC = () => {
   const { data: session } = useSession();
 
   return (
-    <div className="home-container">
-      <UserCard userData={session?.user} />
+    <div className="mt-5 pt-8">
+      {session ? <UserCard userData={session?.user} /> : "Homepage"}
     </div>
   );
 };
