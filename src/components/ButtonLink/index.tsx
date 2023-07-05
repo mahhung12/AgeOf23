@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FC, PropsWithChildren } from "react";
 import { IconList } from "../IconList";
 import classNames from "classnames";
+import { useSession } from "next-auth/react";
 
 const ButtonLink: FC<
   PropsWithChildren<{
@@ -21,6 +22,8 @@ const ButtonLink: FC<
   children,
   ...props
 }) => {
+  const { data: session } = useSession();
+
   const buttonClassNames = classNames(
     "inline-flex gap-5 select-none px-6 py-3 items-center border dark:!shadow-none w-full h-full min-h-[54px]",
     !small
@@ -38,7 +41,7 @@ const ButtonLink: FC<
   );
 
   return (
-    <Link href={href} target={external ? "_blank" : undefined}>
+    <Link href={session ? href : "/"} target={external ? "_blank" : undefined}>
       <Button
         icon={<IconList icon={icon} className={iconClassNames} />}
         className={buttonClassNames}

@@ -16,8 +16,7 @@ const AppLayout: FC<PropsWithChildren<{}>> = ({ children }) => {
 
       {session ? (
         <PrivateLayout>
-          {/* <HomePage /> */}
-          User already logged in
+          <HomePage />
         </PrivateLayout>
       ) : (
         <div className="w-full">{children}</div>

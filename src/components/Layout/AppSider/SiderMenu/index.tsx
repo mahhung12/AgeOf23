@@ -1,20 +1,8 @@
-import ButtonLink from "@/components/ButtonLink/index,";
-import { FC, useEffect } from "react";
+import ButtonLink from "@/components/ButtonLink";
+import { FC } from "react";
 import RegisterUser from "../RegisterUser";
-import { useRouter, usePathname } from "next/navigation";
-import { useSession } from "next-auth/react";
 
 const SiderMenu: FC<{}> = () => {
-  const router = useRouter();
-  const pathname = usePathname();
-  const { data: session } = useSession();
-
-  useEffect(() => {
-    if (!session) {
-      router.push("/");
-    }
-  }, [pathname]);
-
   return (
     <div className="mt-8 flex flex-col space-y-4">
       <ButtonLink icon="folder" href="/docs/introduction">
@@ -37,7 +25,7 @@ const SiderMenu: FC<{}> = () => {
         About
       </ButtonLink>
 
-      {/* <RegisterUser /> */}
+      <RegisterUser />
     </div>
   );
 };

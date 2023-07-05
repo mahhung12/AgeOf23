@@ -1,3 +1,3 @@
-export default function Home({ children }: { children: React.ReactNode }) {
+export default function Home({ children }: any) {
   return <main>{children}</main>;
 }

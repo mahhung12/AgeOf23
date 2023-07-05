@@ -2,7 +2,6 @@ import AppLayout from "@/components/Layout";
 import { Inter } from "next/font/google";
 import "../styles/_app.scss";
 
-// import { CaveatFont } from "@/styles/fonts";
 import Provider from "@/components/SessionProvider/Provider";
 import "@/styles/_app.scss";
 
