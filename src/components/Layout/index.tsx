@@ -21,7 +21,11 @@ const AppLayout: FC<PropsWithChildren<{}>> = ({ children }) => {
           {pathname === "/" ? <HomePage /> : children}
         </PrivateLayout>
       ) : (
-        <div className="w-full">{children}</div>
+        <div className="w-full">
+          <div className="px-6 sm:px-8 xl:px-16 pt-8 mt-5 lg:w-full lg:max-w-prose lg:flex-shrink xl:max-w-4xl 2xl:max-w-5xl">
+            {children}
+          </div>
+        </div>
       )}
     </div>
   );

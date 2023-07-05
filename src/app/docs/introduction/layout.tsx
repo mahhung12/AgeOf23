@@ -4,7 +4,7 @@ import IntroductionPage from "@/components/pages/docs/introduction";
 
 export default function Layout(props: { children: React.ReactNode }) {
   return (
-    <div className="mt-5 pt-8">
+    <div>
       <IntroductionPage />
 
       {props.children}
