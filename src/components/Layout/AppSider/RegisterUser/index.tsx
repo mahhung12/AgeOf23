@@ -14,7 +14,9 @@ const RegisterUser = () => {
   const searchParams = useSearchParams();
   const callbackUrl = searchParams?.get("callbackUrl") as any;
 
-  const handleSignIn = () => signIn("google", callbackUrl);
+  const handleSignIn = () => {
+    signIn("google", callbackUrl);
+  };
 
   const handleOpenRegisterModal = () =>
     setVisibleAuthenticateModal(!visibleAuthenticateModal);
@@ -22,7 +24,7 @@ const RegisterUser = () => {
   const handleCloseRegisterModal = () => setVisibleAuthenticateModal(false);
 
   return (
-    <Space className=" mt-5">
+    <Space>
       {session?.user ? (
         <div
           className="flex flex-nowrap gap-4 cursor-pointer"
@@ -37,7 +39,7 @@ const RegisterUser = () => {
           className="w-full cursor-pointer"
           size={16}
         >
-          <div onClick={handleSignIn}>Sign in</div>
+          <div onClick={handleSignIn}>Connect</div>
           {/* <div onClick={handleSignIn}>Sign Up</div> */}
         </Space>
       )}
