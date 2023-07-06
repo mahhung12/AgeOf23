@@ -16,8 +16,8 @@ const UserCard = ({ userData }: any) => {
       </div>
 
       <div className="flex align-middle flex-col justify-center gap-2">
-        <div className="font-semibold text-lg">{userData.name}</div>
-        <div className="font-light">{userData.email}</div>
+        <div className="font-semibold text-lg">{userData?.name}</div>
+        <div className="font-light">{userData?.email}</div>
       </div>
     </div>
   );

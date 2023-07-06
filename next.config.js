@@ -17,7 +17,7 @@ const nextConfig = {
   pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"],
   images: {
     disableStaticImages: true,
-    domains: ["lh3.googleusercontent.com"],
+    domains: ["lh3.googleusercontent.com", "res.cloudinary.com"],
     imageSizes: [300, 600, 900],
     deviceSizes: [375, 720, 1080],
   },

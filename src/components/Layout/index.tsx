@@ -22,7 +22,7 @@ const AppLayout: FC<PropsWithChildren<{}>> = ({ children }) => {
         </PrivateLayout>
       ) : (
         <div className="w-full">
-          <div className="px-6 sm:px-8 xl:px-16 pt-8 mt-5 lg:w-full lg:max-w-prose lg:flex-shrink xl:max-w-4xl 2xl:max-w-5xl">
+          <div className="h-full p-6 sm:p-8 xl:p-16 lg:w-full lg:max-w-prose lg:flex-shrink xl:max-w-4xl 2xl:max-w-5xl">
             {children}
           </div>
         </div>
