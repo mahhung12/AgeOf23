@@ -3,7 +3,9 @@
 import FormItem from "@/components/FormItem";
 import TextInput from "@/components/FormItem/components/TextInput";
 import Textarea from "@/components/FormItem/components/Textarea";
+import showMessage from "@/components/Message";
 import { InlineCode } from "@/components/Text/InlineCode";
+import { MESSAGE_TYPE } from "@/constant";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { FormProvider, SubmitHandler, useForm } from "react-hook-form";
 import { z } from "zod";
@@ -48,7 +50,10 @@ const ContactPage = () => {
 
   const { handleSubmit } = methods;
 
-  const onSubmit: SubmitHandler<IContact> = (data) => console.log(data);
+  const onSubmit: SubmitHandler<IContact> = (data) => {
+    console.log(data);
+    showMessage(MESSAGE_TYPE.SUCCESS, "Tks your submission");
+  };
 
   return (
     <section className="bg-white dark:bg-gray-900">

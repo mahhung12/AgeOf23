@@ -1,9 +1,11 @@
 import AppLayout from "@/components/Layout";
-import { Inter } from "next/font/google";
-import "../styles/_app.scss";
-
 import Provider from "@/components/SessionProvider/Provider";
+
+import { Inter } from "next/font/google";
+
 import "@/styles/_app.scss";
+import "../styles/_app.scss";
+import "react-toastify/dist/ReactToastify.css";
 
 const inter = Inter({ subsets: ["latin"] });
 

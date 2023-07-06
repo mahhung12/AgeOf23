@@ -7,6 +7,7 @@ import PrivateLayout from "../PrivateLayout";
 import HomePage from "../pages/home";
 import AppSider from "./AppSider";
 import { usePathname } from "next/navigation";
+import { ToastContainer } from "react-toastify";
 
 const AppLayout: FC<PropsWithChildren<{}>> = ({ children }) => {
   const { data: session } = useSession();
@@ -15,6 +16,8 @@ const AppLayout: FC<PropsWithChildren<{}>> = ({ children }) => {
   return (
     <div className="max-w-[1600px] w-full h-full m-auto flex align-middle gap-14 overflow-hidden">
       <AppSider />
+
+      <ToastContainer />
 
       {session ? (
         <PrivateLayout>

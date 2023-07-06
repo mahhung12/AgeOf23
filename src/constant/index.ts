@@ -7,3 +7,11 @@ export const LENGTH_CONSTANTS = {
   DEFAULT_TEXTAREA_ROWS: 5,
   DEFAULT_PAGE_SIZE_OPTIONS: ["10", "20", "50"],
 };
+
+export enum MESSAGE_TYPE {
+  INFO = "info",
+  SUCCESS = "success",
+  WARNING = "warning",
+  ERROR = "error",
+  DEFAULT = "default",
+}

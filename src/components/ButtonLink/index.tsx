@@ -34,7 +34,7 @@ const ButtonLink: FC<
     !dark
       ? "border-gray-200 bg-gray-100 text-black hover:bg-blue-100 dark:border-gray-800 dark:bg-gray-900 hover:border-blue-200 dark:hover:!border-teal-800 dark:hover:bg-teal-950 dark:text-gray-300"
       : "border-gray-800 bg-gray-900 text-gray-300",
-    pathname === href && "border border-indigo-500"
+    pathname === href && pathname !== "/" && "border border-indigo-500"
   );
 
   const iconClassNames = classNames(
