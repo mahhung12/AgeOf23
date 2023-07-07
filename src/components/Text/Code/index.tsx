@@ -11,7 +11,7 @@ export const Code = ({
     {({ className, style, tokens, getLineProps, getTokenProps }) => (
       <pre className={`${className} p-5 rounded-lg`} style={style}>
         {tokens.map((line, i) => (
-          <div {...getLineProps({ line, key: i })}>
+          <div key={i} {...getLineProps({ line, key: i })}>
             {line.map((token, key) => (
               <span key={key} {...getTokenProps({ token })} />
             ))}
