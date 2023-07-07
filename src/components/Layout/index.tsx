@@ -14,7 +14,7 @@ const AppLayout: FC<PropsWithChildren<{}>> = ({ children }) => {
   const pathname = usePathname();
 
   return (
-    <div className="max-w-[1600px] w-full h-full m-auto flex align-middle overflow-hidden">
+    <div className="max-w-[1600px] w-full h-full m-auto flex align-middle">
       <AppSider />
 
       <ToastContainer />
