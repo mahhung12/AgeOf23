@@ -1,3 +1,6 @@
+import { TOC } from "@/components/Docs/Card";
+import { Code } from "@/components/Text/Code";
+import { InlineCode } from "@/components/Text/InlineCode";
 import type { MDXComponents } from "mdx/types";
 import { ReactNode } from "react";
 
@@ -10,13 +13,60 @@ const customClassNames = {
   code: "block",
 };
 
-const H1 = ({ children }: { children: ReactNode }): JSX.Element => (
-  <h1 className={customClassNames.h1}>{children}</h1>
-);
+const H1 = ({ children }: { children: ReactNode }): JSX.Element => {
+  const anchor = getAnchor(children);
+  const link = `#${anchor}`;
 
-const H2 = ({ children }: { children: ReactNode }) => (
-  <h2 className={customClassNames.h2}>{children}</h2>
-);
+  return (
+    <h1 id={anchor} className={customClassNames.h1}>
+      <a href={link}>{children}</a>
+    </h1>
+  );
+};
+
+const H2 = ({ children }: { children: ReactNode }): JSX.Element => {
+  const anchor = getAnchor(children);
+  const link = `#${anchor}`;
+
+  return (
+    <h2 id={anchor} className={customClassNames.h2}>
+      <a href={link}>{children}</a>
+    </h2>
+  );
+};
+
+const H3 = ({ children }: { children: ReactNode }): JSX.Element => {
+  const anchor = getAnchor(children);
+  const link = `#${anchor}`;
+
+  return (
+    <h3 id={anchor} className={customClassNames.h2}>
+      <a href={link}>{children}</a>
+    </h3>
+  );
+};
+
+const H4 = ({ children }: { children: ReactNode }): JSX.Element => {
+  const anchor = getAnchor(children);
+  const link = `#${anchor}`;
+
+  return (
+    <h4 id={anchor} className={customClassNames.h2}>
+      <a href={link}>{children}</a>
+    </h4>
+  );
+};
+
+const H5 = ({ children }: { children: ReactNode }): JSX.Element => {
+  const anchor = getAnchor(children);
+  const link = `#${anchor}`;
+
+  return (
+    <h5 id={anchor} className={customClassNames.h2}>
+      <a href={link}>{children}</a>
+    </h5>
+  );
+};
 
 const Text = ({ children }: { children: ReactNode }) => (
   <p className={customClassNames.p}>{children}</p>
@@ -28,11 +78,23 @@ const Link = (props: any) => (
   </a>
 );
 
+const getAnchor = (value: any) => {
+  return typeof value === "string"
+    ? value.toLowerCase().replace(/'/g, "").split(" ").join("-")
+    : "";
+};
+
 export const defaultMdxComponents: MDXComponents = {
   h1: H1,
   h2: H2,
+  h3: H3,
+  h4: H4,
+  h5: H5,
   p: Text,
   a: Link,
+  code: Code,
+  TOC,
+  inlineCode: InlineCode,
 } as any;
 
 export function useMDXComponents(components?: MDXComponents) {

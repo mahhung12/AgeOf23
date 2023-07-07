@@ -44,7 +44,13 @@ const ButtonLink: FC<
   );
 
   return (
-    <Link href={href} target={external ? "_blank" : undefined}>
+    <Link
+      href={href}
+      target={external ? "_blank" : undefined}
+      scroll={false}
+      replace
+      shallow
+    >
       <Button
         icon={<IconList icon={icon} className={iconClassNames} />}
         className={buttonClassNames}
