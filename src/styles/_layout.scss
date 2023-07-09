@@ -1,6 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
+
 *::-webkit-scrollbar {
   height: 100%;
-  width: 6px;
+  width: 8px;
+
   dark-mode: {
     background-color: #222;
   }
@@ -12,6 +17,7 @@ body.dark *::-webkit-scrollbar {
 
 *::-webkit-scrollbar-track {
   background-color: white;
+
   dark-mode: {
     background-color: #222;
   }
@@ -23,10 +29,11 @@ body.dark *::-webkit-scrollbar-track {
 
 *::-webkit-scrollbar-thumb {
   border-radius: 8px;
-  border-width: 4px;
+  border-width: 8px;
   border-style: solid;
   border-color: #888;
   background-color: #888;
+  position: relative;
   dark-mode: {
     border-color: #222;
     background-color: #333;
@@ -40,4 +47,18 @@ body.dark *::-webkit-scrollbar-thumb {
 
 *::-webkit-scrollbar-button {
   display: none;
+}
+
+.custom-scrollbar {
+  position: relative;
+
+  .climbing-scroll-bar {
+    position: absolute;
+    top: 0;
+    // right: -8px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    transform: translateX(-100%);
+  }
 }
