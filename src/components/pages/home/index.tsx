@@ -25,10 +25,9 @@ const HomePage: FC = () => {
           <div>Hi, i&apos;m mHungg</div>
           <div>
             A skilled <InlineCode dark>full-stack developer</InlineCode> with a
-            strong focus on product development, located in Ha Noi, Vietnam. I
-            have prior experience working as a Web Developer at Ekoios
-            Technology, where I gained valuable insights into building web-based
-            solutions.
+            strong focus on product development, located in Ha Noi - Vietnam. I
+            have prior experience working as a Web Developer and gained valuable
+            insights into building web-based solutions.
           </div>
         </div>
       </div>

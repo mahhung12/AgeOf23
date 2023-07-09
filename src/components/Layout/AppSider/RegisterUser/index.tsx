@@ -1,9 +1,9 @@
 import AuthenticateModal from "@/components/Modal/Authenticate";
-import LogoutIcon from "@/public/icons/LogoutIcon";
 import { Space } from "antd";
 import { signIn, signOut, useSession } from "next-auth/react";
 import { useSearchParams } from "next/navigation";
 import { useState } from "react";
+import LogoutIcon from "../../../../../public/icons/LogoutIcon";
 
 const RegisterUser = () => {
   const { data: session } = useSession();

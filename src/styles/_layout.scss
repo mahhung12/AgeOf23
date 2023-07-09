@@ -50,15 +50,7 @@ body.dark *::-webkit-scrollbar-thumb {
 }
 
 .custom-scrollbar {
-  position: relative;
-
-  .climbing-scroll-bar {
-    position: absolute;
-    top: 0;
-    // right: -8px;
-    right: 0;
-    width: 30px;
-    height: 30px;
-    transform: translateX(-100%);
+  @media (min-height: 1060px) {
+    display: none;
   }
 }
