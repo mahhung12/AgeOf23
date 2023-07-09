@@ -77,6 +77,8 @@ const AppSider = () => {
             height={50}
             quality={100}
             objectFit="cover"
+            placeholder="blur"
+            blurDataURL="/images/climbing-scroll-bar.png"
           />
         </div>
       )}
