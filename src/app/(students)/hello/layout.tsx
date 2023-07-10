@@ -8,7 +8,6 @@ export default function Layout(props: {
   right: React.ReactNode;
 }) {
   const loginSegments = useSelectedLayoutSegment();
-  console.log("loginSegments :>> ", loginSegments);
 
   return (
     <div>

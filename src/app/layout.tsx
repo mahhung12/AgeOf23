@@ -4,8 +4,9 @@ import Provider from "@/components/SessionProvider/Provider";
 import { Inter } from "next/font/google";
 
 import "@/styles/_app.scss";
-import "../styles/_app.scss";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import "../styles/_app.scss";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,7 +25,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Provider>
-          <AppLayout>{children}</AppLayout>
+          <AppLayout>
+            {children}
+
+            <ToastContainer />
+          </AppLayout>
         </Provider>
       </body>
     </html>

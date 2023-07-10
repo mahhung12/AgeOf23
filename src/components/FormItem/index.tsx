@@ -65,7 +65,6 @@ const FormItem: FC<
         if (isValidElement(child)) {
           // Element is HTML
           if (typeof child?.type === "string") {
-            console.log("child type string:>> ", child);
             return child;
           }
 

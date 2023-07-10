@@ -3,11 +3,10 @@
 import type { FC, PropsWithChildren } from "react";
 
 import { useSession } from "next-auth/react";
+import { usePathname } from "next/navigation";
 import PrivateLayout from "../PrivateLayout";
 import HomePage from "../pages/home";
 import AppSider from "./AppSider";
-import { usePathname } from "next/navigation";
-import { ToastContainer } from "react-toastify";
 
 const AppLayout: FC<PropsWithChildren<{}>> = ({ children }) => {
   const { data: session } = useSession();
@@ -17,19 +16,15 @@ const AppLayout: FC<PropsWithChildren<{}>> = ({ children }) => {
     <div className="max-w-[1600px] w-full h-full m-auto flex align-middle">
       <AppSider />
 
-      <ToastContainer />
-
-      {session ? (
-        <PrivateLayout>
-          {pathname === "/" ? <HomePage /> : children}
-        </PrivateLayout>
-      ) : (
-        <div className="w-full">
-          <div className="h-full p-6 sm:p-8 xl:p-16 lg:w-full lg:max-w-prose lg:flex-shrink xl:max-w-4xl 2xl:max-w-5xl">
-            {children}
-          </div>
-        </div>
-      )}
+      <div className="prose h-full p-6 sm:p-8 xl:p-16 lg:w-full lg:flex-shrink lg:max-w-prose xl:max-w-4xl 2xl:max-w-5xl">
+        {session ? (
+          <PrivateLayout>
+            {pathname === "/" ? <HomePage /> : children}
+          </PrivateLayout>
+        ) : (
+          children
+        )}
+      </div>
     </div>
   );
 };
