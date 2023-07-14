@@ -8,6 +8,7 @@ import Image from "next/legacy/image";
 import { usePathname } from "next/navigation";
 
 const { Sider } = Layout;
+const includesArray = ["docs", "company", "project", "education"];
 
 const AppSider = () => {
   const pathname = usePathname();
@@ -61,7 +62,7 @@ const AppSider = () => {
         </React.Fragment>
       </Sider>
 
-      {pathname.includes("docs") && (
+      {includesArray.some((item) => pathname.includes(item)) && (
         <div
           className="fixed custom-scrollbar"
           style={{

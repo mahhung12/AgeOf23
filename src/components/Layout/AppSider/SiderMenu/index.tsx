@@ -5,11 +5,15 @@ import { usePathname } from "next/navigation";
 import { FC } from "react";
 import RegisterUser from "../RegisterUser";
 
+const includesArray = ["docs", "project", "company", "education"];
+
 const SiderMenu: FC<{}> = () => {
   const pathname = usePathname();
 
   const trimPathname = pathname.split("/");
-  const activeDocsPage = trimPathname.includes("docs");
+  const activeDocsPage = trimPathname.some((path) =>
+    includesArray.includes(path)
+  );
 
   return (
     <div className="mt-8 flex flex-col space-y-4">
