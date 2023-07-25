@@ -24,7 +24,7 @@ const HomePage: FC = () => {
         <div className="speech-bubble relative w-2/3 space-y-4 rounded-xl bg-gray-100 p-4 text-sm leading-snug text-gray-800 dark:bg-gray-900 dark:text-gray-300 sm:text-base md:text-lg lg:w-3/4 lg:p-8 lg:leading-normal">
           <div>Hi, i&apos;m mHungg</div>
           <div>
-            A skilled <InlineCode dark>full-stack developer</InlineCode> with a
+            A skilled <InlineCode dark>software developer</InlineCode> with a
             strong focus on product development, located in Ha Noi - Vietnam. I
             have prior experience working as a Web Developer and gained valuable
             insights into building web-based solutions.
