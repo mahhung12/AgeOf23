@@ -1,17 +1,22 @@
 import AppLayout from "@/components/Layout";
 import Provider from "@/components/SessionProvider/Provider";
 
+import { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { ToastContainer } from "react-toastify";
 
 import "@/styles/_app.scss";
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 import "../styles/_app.scss";
+import "react-toastify/dist/ReactToastify.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "Age Of 23",
+export const metadata: Metadata = {
+  metadataBase: new URL("https://age-of-23.vercel.app/"),
+  title: {
+    default: "Age of 23",
+    template: `%s | Age of 23`,
+  },
   description: "Things of Age 23",
 };
 
@@ -19,7 +24,6 @@ export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
-  auth: React.ReactNode;
 }) {
   return (
     <html lang="en">
