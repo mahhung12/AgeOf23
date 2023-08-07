@@ -4,6 +4,9 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
   const post = {
     title: "Company",
     description: "working companies",
+    alternates: {
+      canonicals: `/company/${params?.slug}`,
+    },
     bool: true,
   };
 

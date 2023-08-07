@@ -2,10 +2,10 @@
 
 import OpeningHeader from "@/components/HeaderOpening";
 import { Layout } from "antd";
-import React, { useEffect, useRef, useState } from "react";
-import SiderMenu from "./SiderMenu";
 import Image from "next/legacy/image";
 import { usePathname } from "next/navigation";
+import React, { useEffect, useRef, useState } from "react";
+import SiderMenu from "./SiderMenu";
 
 const { Sider } = Layout;
 const includesArray = ["docs", "company", "project", "education"];
