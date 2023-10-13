@@ -1,0 +1,48 @@
+.theme-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 30px;
+  border: 1px solid var(--bg-theme);
+  font-size: 0.5rem;
+  padding: 0.5rem;
+  height: 3.5rem;
+  overflow: hidden;
+  cursor: pointer;
+
+  outline: none;
+  background: none;
+
+  .sun,
+  .moon {
+    position: relative;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 7px;
+    z-index: 9;
+  }
+
+  .sun path {
+    fill: var(--sun-theme);
+  }
+
+  .moon path {
+    fill: var(--moon-theme);
+  }
+
+  @keyframes spin-slow {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .animate-spin-slow {
+    animation: spin-slow 2s linear infinite;
+  }
+}
