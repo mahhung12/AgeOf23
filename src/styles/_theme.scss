@@ -46,3 +46,18 @@
     animation: spin-slow 2s linear infinite;
   }
 }
+
+.app-layout {
+  .text-global {
+  }
+
+  .heading-global {
+  }
+
+  .paragraph-global {
+  }
+
+  .text-transition {
+    transition: all 0.3 ease-in-out;
+  }
+}

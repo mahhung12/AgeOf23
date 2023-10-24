@@ -1,7 +1,5 @@
 import { Button } from "antd";
-import classNames from "classnames";
 import { useTheme } from "next-themes";
-import React from "react";
 
 type globalTheme = "dark" | "light";
 

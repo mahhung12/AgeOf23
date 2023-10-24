@@ -23,7 +23,7 @@ const HomePage: FC = () => {
             blurDataURL="https://res.cloudinary.com/dxngnrcwk/image/upload/v1688611849/hero-banner_paiobe.png"
           />
         </div>
-        <div className="speech-bubble relative w-2/3 space-y-4 rounded-xl bg-gray-100 p-4 text-sm leading-snug text-gray-800 dark:bg-gray-900 dark:text-gray-300 sm:text-base md:text-lg lg:w-3/4 lg:p-8 lg:leading-normal">
+        <div className="speech-bubble relative w-2/3 space-y-4 rounded-xl p-4 text-sm leading-snug sm:text-base md:text-lg lg:w-3/4 lg:p-8 lg:leading-normal">
           <div>Hi, i&apos;m mHungg</div>
           <div>
             A skilled <InlineCode dark>software developer</InlineCode> with a
