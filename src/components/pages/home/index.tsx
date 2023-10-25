@@ -2,13 +2,10 @@
 
 import { Headline } from "@/components/Text/Headline";
 import { InlineCode } from "@/components/Text/InlineCode";
-import { useSession } from "next-auth/react";
 import Image from "next/legacy/image";
 import React, { FC } from "react";
 
 const HomePage: FC = () => {
-  const { data: session } = useSession();
-
   return (
     <React.Fragment>
       <div className="mt-8 flex items-center space-x-4 sm:space-x-8 sm:px-16 lg:mt-0 lg:px-0">

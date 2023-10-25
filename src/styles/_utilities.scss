@@ -1,5 +1,6 @@
 .speech-bubble {
   background: var(--background-theme);
+  color: var(--text-color-2);
 
   &::after {
     content: "";

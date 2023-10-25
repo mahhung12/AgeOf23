@@ -7,6 +7,7 @@ module.exports = {
     "./src/docs/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/styles/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  // darkMode: "media",
   theme: {
     extend: {
       backgroundImage: {

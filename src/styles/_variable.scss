@@ -12,6 +12,7 @@ html[data-theme="light"] {
   --background-theme: #f9f9f9;
 
   --text-color: #040d12;
+  --text-color-2: rgb(38 38 38/1);
   --vt-c-text-1: #213547;
 
   --bg-theme: #396273;
@@ -26,9 +27,10 @@ html[data-theme="dark"] {
   --background-theme-btn: #000;
   --foreground: #000;
   --theme: #000;
-  --background-theme: #242424;
+  --background-theme: rgb(23 23 23 / 1);
 
   --text-color: #faf0e6;
+  --text-color-2: rgb(212 212 212/1);
   --vt-c-text-1: rgba(255, 255, 255, 0.87);
 
   --bg-theme: #fcf2eb;
