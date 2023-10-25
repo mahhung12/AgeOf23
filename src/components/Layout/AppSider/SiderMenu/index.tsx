@@ -47,13 +47,13 @@ const SiderMenu: FC<{}> = () => {
         Contact
       </ButtonLink>
 
-      <ButtonLink icon="connect" href="/">
+      {/* <ButtonLink icon="connect" href="/">
         <RegisterUser />
       </ButtonLink>
 
       <ButtonLink icon="plus" href="/">
         Other features
-      </ButtonLink>
+      </ButtonLink> */}
     </div>
   );
 };

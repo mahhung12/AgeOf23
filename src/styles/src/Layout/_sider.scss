@@ -9,3 +9,12 @@
     }
   }
 }
+
+.button-link {
+  background-color: var(--background-theme) !important;
+  color: unset !important;
+
+  span {
+    color: var(--text-color-2);
+  }
+}

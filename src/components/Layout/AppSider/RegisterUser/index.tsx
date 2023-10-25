@@ -1,4 +1,3 @@
-import AuthenticateModal from "@/components/Modal/Authenticate";
 import { Space } from "antd";
 import { signIn, signOut, useSession } from "next-auth/react";
 import { useSearchParams } from "next/navigation";
