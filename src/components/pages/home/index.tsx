@@ -21,7 +21,7 @@ const HomePage: FC = () => {
           />
         </div>
         <div className="speech-bubble relative w-2/3 space-y-4 rounded-xl p-4 text-sm leading-snug sm:text-base md:text-lg lg:w-3/4 lg:p-8 lg:leading-normal">
-          <div>Hi, i&apos;m mHungg</div>
+          <div>Hi, i&apos;m mHung</div>
           <div>
             A skilled <InlineCode dark>software developer</InlineCode> with a
             strong focus on product development, located in Ha Noi - Vietnam. I

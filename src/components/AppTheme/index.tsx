@@ -1,8 +1,6 @@
 import { Button } from "antd";
 import { useTheme } from "next-themes";
 
-type globalTheme = "dark" | "light";
-
 const AppTheme = () => {
   const { theme, setTheme } = useTheme();
 
