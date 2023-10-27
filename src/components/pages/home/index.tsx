@@ -11,13 +11,13 @@ const HomePage: FC = () => {
       <div className="mt-8 flex items-center space-x-4 sm:space-x-8 sm:px-16 lg:mt-0 lg:px-0">
         <div className="relative w-1/3 h-[200px] max-w-[215px] lg:w-1/4">
           <Image
-            src="https://res.cloudinary.com/dxngnrcwk/image/upload/v1688611849/hero-banner_paiobe.png"
+            src="/images/hero-banner_paiobe.png"
             alt="Age of 23"
             layout="fill"
             quality={100}
             objectFit="cover"
             placeholder="blur"
-            blurDataURL="https://res.cloudinary.com/dxngnrcwk/image/upload/v1688611849/hero-banner_paiobe.png"
+            blurDataURL="/images/hero-banner_paiobe.png"
           />
         </div>
         <div className="speech-bubble relative w-2/3 space-y-4 rounded-xl p-4 text-sm leading-snug sm:text-base md:text-lg lg:w-3/4 lg:p-8 lg:leading-normal">

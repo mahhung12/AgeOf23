@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "find:unused": "next-unused"
   },
   "dependencies": {
     "@hookform/error-message": "^2.0.1",
@@ -39,5 +40,13 @@
     "typescript": "5.0.4",
     "zod": "^3.21.4",
     "zustand": "^4.3.9"
+  },
+  "devDependencies": {
+    "next-unused": "^0.0.6"
+  },
+  "next-unused": {
+    "include": [
+      "/app"
+    ]
   }
 }
