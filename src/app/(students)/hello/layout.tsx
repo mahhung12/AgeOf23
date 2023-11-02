@@ -1,13 +1,11 @@
-"use client";
-
-import { useSelectedLayoutSegment } from "next/navigation";
+// import { useSelectedLayoutSegment } from "next/navigation";
 
 export default function Layout(props: {
   children: React.ReactNode;
   left: React.ReactNode;
   right: React.ReactNode;
 }) {
-  const loginSegments = useSelectedLayoutSegment();
+  // const loginSegments = useSelectedLayoutSegment();
 
   return (
     <div>

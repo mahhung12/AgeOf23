@@ -1,5 +1,3 @@
-"use client";
-
 import ChuyenHGPage from "@/components/pages/docs/education/chuyen-hg";
 
 const Home = () => {

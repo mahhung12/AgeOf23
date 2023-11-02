@@ -1,5 +1,3 @@
-"use client";
-
 import AppLayout from "@/components/Layout";
 import Provider from "@/components/SessionProvider/Provider";
 
