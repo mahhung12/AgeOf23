@@ -25,6 +25,8 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const unused = 2;
+
   return (
     <html lang="en">
       <body>
