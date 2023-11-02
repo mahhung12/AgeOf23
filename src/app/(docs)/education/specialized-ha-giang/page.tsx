@@ -2,11 +2,13 @@
 
 import ChuyenHGPage from "@/components/pages/docs/education/chuyen-hg";
 
-export default function Home({ children }: any) {
+const Home = () => {
   return (
     <main>
       {/* {children} */}
       <ChuyenHGPage />
     </main>
   );
-}
+};
+
+export default Home;
