@@ -38,6 +38,7 @@
     "sass": "^1.62.1",
     "tailwindcss": "3.3.2",
     "typescript": "5.0.4",
+    "vercel": "^32.5.0",
     "zod": "^3.21.4",
     "zustand": "^4.3.9"
   },
