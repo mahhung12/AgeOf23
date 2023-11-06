@@ -7,7 +7,6 @@ const EkoiosTechnologyPage: FC = () => {
         <div className="company-container">
             <MdxProvider>
                 <EkoiosTechnology />
-                <div></div>
             </MdxProvider>
         </div>
     );
