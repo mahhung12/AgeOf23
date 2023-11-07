@@ -28,8 +28,12 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "eslint.validate": [
     "javascript",
     "javascriptreact",
@@ -69,26 +73,12 @@
     "Antd",
     "anticon",
     "bignumber",
-    "Blockhash",
-    "delisted",
     "Devnet",
-    "flipkingx",
-    "FLKPX",
-    "FLPKX",
-    "gflipkingx",
-    "GFLPKX",
     "hookform",
-    "INFT",
-    "IPFS",
     "Keypair",
-    "LAMPORTS",
     "lastest",
     "pocker",
-    "RAKEBACK",
     "Sider",
-    "solana",
-    "solscan",
-    "Sysvar",
     "webp",
     "zustand"
   ],
