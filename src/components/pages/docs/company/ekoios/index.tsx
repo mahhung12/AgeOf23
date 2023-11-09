@@ -1,5 +1,6 @@
+"use client";
+
 import EkoiosTechnology from "@/docs/Ekoios-Technology.mdx";
-// import EkoiosTechnology from "../../../../../docs/Ekoios-Technology.mdx";
 import MdxProvider from "@/docs/MdxProvider";
 import { FC } from "react";
 

@@ -1,3 +1,5 @@
+"use client";
+
 import FutureCity from "@/docs/Future-City.mdx";
 import MdxProvider from "@/docs/MdxProvider";
 import { FC } from "react";

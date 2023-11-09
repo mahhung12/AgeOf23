@@ -1,3 +1,5 @@
+"use client";
+
 import ChuyenHG from "@/docs/Chuyen-HG.mdx";
 import MdxProvider from "@/docs/MdxProvider";
 import { FC } from "react";
