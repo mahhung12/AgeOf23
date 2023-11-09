@@ -3,7 +3,7 @@
 const path = require("path");
 
 const withMDX = require("@next/mdx")({
-  extension: /\.mdx?$/,
+  extension: /\.(md|mdx)?$/,
   options: {
     remarkPlugins: [],
     rehypePlugins: [],
