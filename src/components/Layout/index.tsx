@@ -25,7 +25,7 @@ const AppLayout: FC<PropsWithChildren<{}>> = ({ children }) => {
           )}
         </div>
 
-        <AppTheme />
+        {/* <AppTheme /> */}
       </div>
     </div>
   );
