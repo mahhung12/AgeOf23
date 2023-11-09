@@ -1,3 +1,5 @@
+"use client";
+
 import AppLayout from "@/components/Layout";
 import Provider from "@/components/SessionProvider/Provider";
 
@@ -27,13 +29,13 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Provider>
-          {/* <ThemeProvider> */}
-          <AppLayout>
-            {children}
+          <ThemeProvider>
+            <AppLayout>
+              {children}
 
-            <ToastContainer />
-          </AppLayout>
-          {/* </ThemeProvider> */}
+              <ToastContainer />
+            </AppLayout>
+          </ThemeProvider>
         </Provider>
       </body>
     </html>
