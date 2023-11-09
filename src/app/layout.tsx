@@ -1,5 +1,3 @@
-"use client";
-
 import AppLayout from "@/components/Layout";
 import Provider from "@/components/SessionProvider/Provider";
 
@@ -25,19 +23,17 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const unused = 2;
-
   return (
     <html lang="en">
       <body>
         <Provider>
-          <ThemeProvider>
-            <AppLayout>
-              {children}
+          {/* <ThemeProvider> */}
+          <AppLayout>
+            {children}
 
-              <ToastContainer />
-            </AppLayout>
-          </ThemeProvider>
+            <ToastContainer />
+          </AppLayout>
+          {/* </ThemeProvider> */}
         </Provider>
       </body>
     </html>
