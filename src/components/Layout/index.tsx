@@ -5,7 +5,7 @@ import AppSider from "./AppSider";
 import classNames from "classnames";
 
 interface AppLayoutProps {
-  dark: boolean;
+  dark?: boolean;
 }
 
 const AppLayout: FC<PropsWithChildren<AppLayoutProps>> = ({ children }) => {
