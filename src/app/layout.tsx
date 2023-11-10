@@ -18,16 +18,15 @@ export const metadata: Metadata = {
   description: "Things of Age 23",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
+
       <body>
         <Provider>
-          {/* <ThemeProvider> */}
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <AppLayout>
               {children}
