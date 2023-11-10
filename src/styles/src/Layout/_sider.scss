@@ -1,18 +1,6 @@
-.sider-bar {
-  .header-container {
-    h1 {
-      color: var(--text-color);
-    }
-
-    h2 {
-      color: var(--text-color);
-    }
-  }
-}
-
 .button-link {
   background-color: var(--background-theme) !important;
-  color: unset !important;
+  // color: unset !important;
 
   span {
     color: var(--text-color-2);

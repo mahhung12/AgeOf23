@@ -1,13 +1,16 @@
-// "use client";
-
 import type { FC, PropsWithChildren } from "react";
 
 import { ThemeSwitcher } from "../AppTheme";
 import AppSider from "./AppSider";
+import classNames from "classnames";
 
-const AppLayout: FC<PropsWithChildren<{}>> = ({ children }) => {
+interface AppLayoutProps {
+  dark: boolean;
+}
+
+const AppLayout: FC<PropsWithChildren<AppLayoutProps>> = ({ children }) => {
   return (
-    <div className="app-layout">
+    <div className={classNames("app-layout bg-white dark:bg-black")}>
       <div className="max-w-[1600px] w-full h-full m-auto flex align-middle relative">
         <AppSider />
 
