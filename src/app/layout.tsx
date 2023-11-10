@@ -7,7 +7,7 @@ import { ToastContainer } from "react-toastify";
 import "@/styles/_app.scss";
 import "react-toastify/dist/ReactToastify.css";
 import "../styles/_app.scss";
-import { ThemeProvider } from "next-themes";
+import { ThemeProvider } from "@/provider/theme-provider";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://age-of-23.vercel.app/"),
@@ -28,12 +28,13 @@ export default function RootLayout({
       <body>
         <Provider>
           {/* <ThemeProvider> */}
-          <AppLayout>
-            {children}
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+            <AppLayout>
+              {children}
 
-            <ToastContainer />
-          </AppLayout>
-          {/* </ThemeProvider> */}
+              <ToastContainer />
+            </AppLayout>
+          </ThemeProvider>
         </Provider>
       </body>
     </html>
