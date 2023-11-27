@@ -4,10 +4,10 @@ import Provider from "@/components/SessionProvider/Provider";
 import { Metadata } from "next";
 import { ToastContainer } from "react-toastify";
 
+import { ThemeProvider } from "@/provider/theme-provider";
 import "@/styles/_app.scss";
 import "react-toastify/dist/ReactToastify.css";
 import "../styles/_app.scss";
-import { ThemeProvider } from "@/provider/theme-provider";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://age-of-23.vercel.app/"),

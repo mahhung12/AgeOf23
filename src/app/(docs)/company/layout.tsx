@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import { Suspense } from "react";
+import Loading from "./loading";
 
 export async function generateMetadata({ params }: any): Promise<Metadata> {
   const post = {
@@ -23,5 +25,9 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-  return <main>{children}</main>;
+  return (
+    <main>
+      <Suspense fallback={<Loading />}>{children}</Suspense>
+    </main>
+  );
 }
