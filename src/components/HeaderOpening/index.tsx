@@ -5,7 +5,7 @@ const OpeningHeader: FC = () => {
   return (
     <header className="header-container text-black dark:text-white">
       <h1 className="2xl:text-7xl md:text-[58px] font-bold text-transition hover:text-opacity-60">
-        <Link href="/" className="gap-2 self-end align-middle">
+        <Link href="/" className="gap-2 self-end align-middle whitespace-nowrap">
           Age of <b className="text-xl font-semibold self-end">23</b>
         </Link>
       </h1>
