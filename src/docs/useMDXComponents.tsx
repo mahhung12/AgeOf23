@@ -1,6 +1,7 @@
 import { TOC } from "@/components/Docs/Card";
 import { Code } from "@/components/Text/Code";
 import { InlineCode } from "@/components/Text/InlineCode";
+import Test from "@/components/pages/test";
 import type { MDXComponents } from "mdx/types";
 import { ReactNode } from "react";
 
@@ -68,9 +69,7 @@ const H5 = ({ children }: { children: ReactNode }): JSX.Element => {
   );
 };
 
-const Text = ({ children }: { children: ReactNode }) => (
-  <p className={customClassNames.p}>{children}</p>
-);
+const Text = ({ children }: { children: ReactNode }) => <p className={customClassNames.p}>{children}</p>;
 
 const Link = (props: any) => (
   <a className={customClassNames.a} {...props}>
@@ -79,10 +78,12 @@ const Link = (props: any) => (
 );
 
 const getAnchor = (value: any) => {
-  return typeof value === "string"
-    ? value.toLowerCase().replace(/'/g, "").split(" ").join("-")
-    : "";
+  return typeof value === "string" ? value.toLowerCase().replace(/'/g, "").split(" ").join("-") : "";
 };
+
+const Pre = ({ children }: { children: ReactNode }) => (
+  <div className="bg-slate-800 dark:bg-gray-900 px-4 pt-5 rounded">{children}</div>
+);
 
 export const defaultMdxComponents: MDXComponents = {
   h1: H1,
@@ -92,9 +93,13 @@ export const defaultMdxComponents: MDXComponents = {
   h5: H5,
   p: Text,
   a: Link,
+  pre: Pre,
   code: Code,
-  TOC,
   inlineCode: InlineCode,
+
+  // Component
+  TOC,
+  Test,
 } as any;
 
 export function useMDXComponents(components?: MDXComponents) {

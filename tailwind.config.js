@@ -10,10 +10,7 @@ module.exports = {
   // purge: ["./components/**/*.{js,ts,jsx,tsx}", "./app/**/*.{js,ts,jsx,tsx}"],
 
   // darkMode: "media",
-  // darkMode: ["class"],
   darkMode: "class",
-  // darkMode: "media",
-
   theme: {
     extend: {
       backgroundImage: {
