@@ -16,7 +16,7 @@ body.dark *::-webkit-scrollbar {
 }
 
 *::-webkit-scrollbar-track {
-  background-color: white;
+  // background-color: white;
 
   dark-mode: {
     background-color: #222;
@@ -31,6 +31,8 @@ body.dark *::-webkit-scrollbar-track {
   border-radius: 8px;
   border-width: 8px;
   border-style: solid;
+  // border-color: var(--background);
+  // background-color: var(--background);
   border-color: #888;
   background-color: #888;
   position: relative;

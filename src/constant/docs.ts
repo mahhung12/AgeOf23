@@ -4,13 +4,13 @@ export const docs = [
     title: "Working companies",
     contents: [
       {
-        slug: "company/fpt-software",
+        slug: "/company/fpt-software",
         meta: {
           title: "FPT Software",
         },
       },
       {
-        slug: "company/ekoios",
+        slug: "/company/ekoios",
         meta: {
           title: "Ekoios Technology",
         },
@@ -22,13 +22,13 @@ export const docs = [
     title: "Projects",
     contents: [
       {
-        slug: "project/age-of-23",
+        slug: "/project/age-of-23",
         meta: {
           title: "Age of 23",
         },
       },
       {
-        slug: "project/future-city",
+        slug: "/project/future-city",
         meta: {
           title: "Future City",
         },
@@ -40,13 +40,13 @@ export const docs = [
     title: "Education",
     contents: [
       {
-        slug: "education/specialized-ha-giang",
+        slug: "/education/specialized-ha-giang",
         meta: {
           title: "Ha Giang Specialized High School",
         },
       },
       {
-        slug: "education/fpt-university",
+        slug: "/education/fpt-university",
         meta: {
           title: "FPT University",
         },

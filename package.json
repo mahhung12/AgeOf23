@@ -26,6 +26,7 @@
     "dotenv": "^16.0.3",
     "eslint": "8.40.0",
     "eslint-config-next": "13.4.1",
+    "lucide-react": "^0.312.0",
     "next": "^14.0.5-canary.65",
     "next-auth": "^4.22.1",
     "next-themes": "^0.2.1",
