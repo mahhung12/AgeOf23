@@ -1,9 +1,11 @@
 import HomePage from "@/components/pages/home";
 
-export default function Home({ children }: any) {
+const Home = () => {
   return (
     <main>
       <HomePage />
     </main>
   );
-}
+};
+
+export default Home;

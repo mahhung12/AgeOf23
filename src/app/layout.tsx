@@ -5,7 +5,6 @@ import { Metadata } from "next";
 import { ToastContainer } from "react-toastify";
 
 import { ThemeProvider } from "@/provider/theme-provider";
-import "@/styles/_app.scss";
 import "react-toastify/dist/ReactToastify.css";
 import "../styles/_app.scss";
 
@@ -27,7 +26,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
       <body>
         <Provider>
-          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <ThemeProvider attribute="class"
+          //  defaultTheme="system" enableSystem
+           >
             <AppLayout>
               {children}
 

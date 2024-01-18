@@ -37,17 +37,6 @@ const HomePage: FC = () => {
             share my experiences and aspirations with others in a vibrant and engaging way.
           </p>
           <p>
-            Inspired by{" "}
-            <InlineCode dark>
-              <a href="https://jotai.org/" target="_blank">
-                Jotai
-              </a>
-            </InlineCode>
-            , an extraordinary web development framework, I am eager to embark on this journey and bring my website to
-            life. With Jotai&apos;s elegant design and flexibility, I can effortlessly manage the state of my
-            application, enabling seamless navigation and delightful user interactions.
-          </p>
-          <p>
             As I craft this website, I will dedicate time to gradually update it until it truly reflects the essence of
             who I am. Who knows, it may become a personalized perfectly captures my unique story and serves as a
             testament to my growth and accomplishments.

@@ -5,7 +5,7 @@
   "editor.fontLigatures": true,
   "editor.snippetSuggestions": "top",
   "eslint.format.enable": true,
-  "editor.wordBasedSuggestions": false,
+  "editor.wordBasedSuggestions": "off",
   "editor.suggest.localityBonus": true,
   "editor.acceptSuggestionOnCommitCharacter": false,
   "[javascript]": {
@@ -26,7 +26,7 @@
     "**/*.typegen.ts": true
   },
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
