@@ -18,7 +18,7 @@ const HomePage: FC = () => {
             blurDataURL="/images/hero-banner_paiobe.png"
           />
         </div>
-        <div className="speech-bubble relative w-2/3 space-y-4 rounded-xl p-4 text-sm leading-snug sm:text-base md:text-lg lg:w-3/4 lg:p-8 lg:leading-normal">
+        <div className="bg-gray bg-gray-100 dark:bg-gray-900 relative w-2/3 space-y-4 rounded-xl p-4 text-sm leading-snug sm:text-base md:text-lg lg:w-3/4 lg:p-8 lg:leading-normal text-gray-800 dark:text-white">
           <div>Hi, i&apos;m mHung</div>
           <div>
             A skilled <InlineCode dark>software developer</InlineCode> with a strong focus on product development,
@@ -29,9 +29,9 @@ const HomePage: FC = () => {
       </div>
 
       <div className="mt-12 space-y-12 lg:mt-24 lg:space-y-24">
-        <div className="space-y-4">
+        <div className="space-y-4 text-gray-800 dark:text-white">
           <Headline>Introduction</Headline>
-          <p>
+          <p className="text-gray-800 dark:text-white">
             At the <InlineCode dark>Age of 23</InlineCode>, I envision creating a captivating website that serves as a
             concise summary of my life, encompassing my work, education, and personal journey. It will be a platform to
             share my experiences and aspirations with others in a vibrant and engaging way.
