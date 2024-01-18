@@ -1,10 +1,8 @@
 import { TOC } from "@/components/Docs/Card";
 import { Code } from "@/components/Text/Code";
 import { InlineCode } from "@/components/Text/InlineCode";
-import Test from "@/components/pages/test";
 import type { MDXComponents } from "mdx/types";
 import { ReactNode } from "react";
-
 const customClassNames = {
   h1: "text-4xl font-bold mb-4",
   h2: "text-3xl font-bold mb-3",
@@ -99,7 +97,6 @@ export const defaultMdxComponents: MDXComponents = {
 
   // Component
   TOC,
-  Test,
 } as any;
 
 export function useMDXComponents(components?: MDXComponents) {
