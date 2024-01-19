@@ -80,7 +80,7 @@ const getAnchor = (value: any) => {
 };
 
 const Pre = ({ children }: { children: ReactNode }) => (
-  <div className="bg-slate-800 dark:bg-gray-900 px-4 pt-5 rounded">{children}</div>
+  <div className="bg-gray-800 dark:bg-gray-700 px-4 pt-5 rounded">{children}</div>
 );
 
 export const defaultMdxComponents: MDXComponents = {

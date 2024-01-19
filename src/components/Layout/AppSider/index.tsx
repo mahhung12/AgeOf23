@@ -62,7 +62,7 @@ const AppSider = () => {
         </React.Fragment>
       </Sider>
 
-      {includesArray.some((item) => pathname.includes(item)) && (
+      {/* {includesArray.some((item) => pathname.includes(item)) && (
         <div
           className="fixed custom-scrollbar"
           style={{
@@ -82,7 +82,7 @@ const AppSider = () => {
             blurDataURL="/images/climbing-scroll-bar.png"
           />
         </div>
-      )}
+      )} */}
     </div>
   );
 };
