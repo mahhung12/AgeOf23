@@ -1,10 +1,8 @@
 import { TOC } from "@/components/Docs/Card";
 import { Code } from "@/components/Text/Code";
 import { InlineCode } from "@/components/Text/InlineCode";
-import Test from "@/components/pages/test";
 import type { MDXComponents } from "mdx/types";
 import { ReactNode } from "react";
-
 const customClassNames = {
   h1: "text-4xl font-bold mb-4",
   h2: "text-3xl font-bold mb-3",
@@ -82,7 +80,7 @@ const getAnchor = (value: any) => {
 };
 
 const Pre = ({ children }: { children: ReactNode }) => (
-  <div className="bg-slate-800 dark:bg-gray-900 px-4 pt-5 rounded">{children}</div>
+  <div className="bg-gray-800 dark:bg-gray-700 px-4 pt-5 rounded">{children}</div>
 );
 
 export const defaultMdxComponents: MDXComponents = {
@@ -99,7 +97,6 @@ export const defaultMdxComponents: MDXComponents = {
 
   // Component
   TOC,
-  Test,
 } as any;
 
 export function useMDXComponents(components?: MDXComponents) {

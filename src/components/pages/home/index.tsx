@@ -18,10 +18,10 @@ const HomePage: FC = () => {
             blurDataURL="/images/hero-banner_paiobe.png"
           />
         </div>
-        <div className="bg-gray bg-gray-100 dark:bg-gray-900 relative w-2/3 space-y-4 rounded-xl p-4 text-sm leading-snug sm:text-base md:text-lg lg:w-3/4 lg:p-8 lg:leading-normal text-gray-800 dark:text-white">
+        <div className="bg-gray bg-gray-100 dark:bg-gray-700 relative w-2/3 space-y-4 rounded-xl p-4 text-sm leading-snug sm:text-base md:text-lg lg:w-3/4 lg:p-8 lg:leading-normal text-gray-800 dark:text-white">
           <div>Hi, i&apos;m mHung</div>
           <div>
-            A skilled <InlineCode dark>software developer</InlineCode> with a strong focus on product development,
+            A skilled <InlineCode dark>Software Developer</InlineCode> with a strong focus on product development,
             located in Ha Noi - Vietnam. I have prior experience working as a Web Developer and gained valuable insights
             into building web-based solutions.
           </div>

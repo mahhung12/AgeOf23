@@ -9,7 +9,7 @@ interface AppLayoutProps {
 
 const AppLayout: FC<PropsWithChildren<AppLayoutProps>> = ({ children }) => {
   return (
-    <div className={classNames("app-layout bg-white dark:bg-black")}>
+    <div className={classNames("app-layout bg-white dark:bg-slate-800 ring-slate-900/5 shadow-xl")}>
       <div className="max-w-[1600px] w-full h-full m-auto flex align-middle relative">
         <AppSider />
 
