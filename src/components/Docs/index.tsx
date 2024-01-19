@@ -42,21 +42,21 @@ export const Docs = ({ navLinks, className, ...rest }: { className?: string; nav
             </div>
           )}
 
-          <ul className="space-y-0.5">
+          <div className="space-y-0.5">
             {section.id === activeDocs.docActive &&
               section.contents.map((doc) => (
                 <Link
                   key={doc.slug}
                   href={doc.slug}
                   className={cx(
-                    "relative -left-3 inline-block whitespace-nowrap rounded border border-transparent px-2 py-1 text-base text-black hover:!border-gray-200 hover:bg-orange-100 dark:text-gray-300 dark:hover:!border-teal-800 dark:hover:bg-teal-950",
+                    "relative w-full -left-3 inline-block whitespace-nowrap rounded border border-transparent px-2 py-1 text-base text-black hover:!border-gray-200 hover:bg-orange-100 dark:text-gray-300 dark:hover:!border-teal-800 dark:hover:bg-teal-950",
                     doc.slug === pathname && "!border-blue-200 dark:!border-teal-900 bg-orange-100 dark:bg-teal-950"
                   )}
                 >
                   {doc.meta.title}
                 </Link>
               ))}
-          </ul>
+          </div>
         </div>
       ))}
     </div>
