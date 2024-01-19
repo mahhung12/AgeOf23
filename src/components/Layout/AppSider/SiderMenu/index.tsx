@@ -4,7 +4,7 @@ import { docs } from "@/constant/docs";
 import { usePathname } from "next/navigation";
 import { FC } from "react";
 
-const includesArray = ["docs", "project", "company", "education"];
+const includesArray = ["docs", "achievement", "company", "education"];
 
 const SiderMenu: FC<{}> = () => {
   const pathname = usePathname();

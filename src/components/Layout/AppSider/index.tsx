@@ -8,7 +8,7 @@ import React, { useEffect, useRef, useState } from "react";
 import SiderMenu from "./SiderMenu";
 
 const { Sider } = Layout;
-const includesArray = ["docs", "company", "project", "education"];
+const includesArray = ["docs", "company", "achievement", "education"];
 
 const AppSider = () => {
   const pathname = usePathname();

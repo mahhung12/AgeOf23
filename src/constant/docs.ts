@@ -18,17 +18,17 @@ export const docs = [
     ],
   },
   {
-    id: "project",
-    title: "Projects",
+    id: "achievement",
+    title: "achievement",
     contents: [
       {
-        slug: "/project/age-of-23",
+        slug: "/achievement/age-of-23",
         meta: {
           title: "Age of 23",
         },
       },
       {
-        slug: "/project/future-city",
+        slug: "/achievement/future-city",
         meta: {
           title: "Future City",
         },
