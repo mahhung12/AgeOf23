@@ -22,7 +22,7 @@ interface IContact {
   [CONTACT_ENUM.MESSAGE]: string;
 }
 
-const DEFAULT_CONTACT_FORM = {
+const DEFAULT_CONTACT_FORM: IContact = {
   [CONTACT_ENUM.NAME]: "",
   [CONTACT_ENUM.EMAIL]: "",
   [CONTACT_ENUM.MESSAGE]: "",
@@ -31,15 +31,8 @@ const DEFAULT_CONTACT_FORM = {
 const schema = () =>
   z.object({
     [CONTACT_ENUM.NAME]: z.string().min(1, { message: "Name is required" }),
-
-    [CONTACT_ENUM.EMAIL]: z
-      .string()
-      .min(1, { message: "Email is required" })
-      .email("This is not a valid email"),
-
-    [CONTACT_ENUM.MESSAGE]: z
-      .string()
-      .min(1, { message: "Message is required" }),
+    [CONTACT_ENUM.EMAIL]: z.string().min(1, { message: "Email is required" }).email("This is not a valid email"),
+    [CONTACT_ENUM.MESSAGE]: z.string().min(1, { message: "Message is required" }),
   });
 
 const ContactPage = () => {
@@ -52,25 +45,20 @@ const ContactPage = () => {
 
   const onSubmit: SubmitHandler<IContact> = (data) => {
     console.log(data);
-    showMessage(MESSAGE_TYPE.SUCCESS, "Tks your submission");
+    showMessage(MESSAGE_TYPE.SUCCESS, "Lovely message, many thanks!");
   };
 
   return (
-    <section className="bg-white dark:bg-gray-900">
+    <section className="pt-10 mt-10">
       <div className="mx-auto max-w-screen-md">
         <h2 className="mb-4 text-3xl tracking-tight font-bold text-gray-700 dark:text-white">
           Contact <InlineCode dark>me</InlineCode>
         </h2>
         <p className="mb-8 lg:mb-10 font-light text-gray-500 dark:text-gray-400 sm:text-[16px]">
-          Everything has beauty, but not everyone sees it. Tell me what you see
-          !!
+          Everything has beauty, but not everyone sees it. Tell me what you see!
         </p>
         <FormProvider {...methods}>
-          <form
-            onSubmit={handleSubmit(onSubmit)}
-            autoComplete="off"
-            className="space-y-8"
-          >
+          <form onSubmit={handleSubmit(onSubmit)} autoComplete="off" className="space-y-8">
             <FormItem
               name={CONTACT_ENUM.NAME}
               label="Your name"
