@@ -8,7 +8,7 @@ Friendships and romantic relationships take on a new level of importance at this
 
 ### Friendships
 
-People at this age may be nurturing long-standing friendships from their school days, cherishing those bonds that have stood the test of time. Simultaneously, they might be forging new connections, expanding their social circles, and learning from diverse perspectives.
+People at this age may be nurturing long-standing friendships from their school days, cherishing those bonds that have stood the test of time. Sim ultaneously, they might be forging new connections, expanding their social circles, and learning from diverse perspectives.
 
 ### Romantic Relationships
 
