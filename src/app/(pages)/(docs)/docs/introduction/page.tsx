@@ -6,11 +6,9 @@ import { FC } from "react";
 
 const IntroductionPage: FC = () => {
   return (
-    <div className="introduction-container">
-      <MdxProvider>
-        <Introduction />
-      </MdxProvider>
-    </div>
+    <MdxProvider>
+      <Introduction />
+    </MdxProvider>
   );
 };
 

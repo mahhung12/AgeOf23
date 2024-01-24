@@ -1,8 +1,10 @@
 import { TOC } from "@/components/Docs/Card";
 import { Code } from "@/components/Text/Code";
 import { InlineCode } from "@/components/Text/InlineCode";
+import { Tag } from "@/components/Text/Tag";
 import type { MDXComponents } from "mdx/types";
 import { ReactNode } from "react";
+
 const customClassNames = {
   h1: "text-4xl font-bold mb-4",
   h2: "text-3xl font-bold mb-3",
@@ -10,6 +12,7 @@ const customClassNames = {
   a: "text-blue-500 underline",
   pre: "block",
   code: "block",
+  center: "flex items-center justify-center",
 };
 
 const H1 = ({ children }: { children: ReactNode }): JSX.Element => {
@@ -70,7 +73,7 @@ const H5 = ({ children }: { children: ReactNode }): JSX.Element => {
 const Text = ({ children }: { children: ReactNode }) => <p className={customClassNames.p}>{children}</p>;
 
 const Link = (props: any) => (
-  <a className={customClassNames.a} {...props}>
+  <a className={customClassNames.a + " " + customClassNames.center} {...props}>
     {props.children}
   </a>
 );
@@ -92,11 +95,12 @@ export const defaultMdxComponents: MDXComponents = {
   p: Text,
   a: Link,
   pre: Pre,
-  code: Code,
   inlineCode: InlineCode,
 
   // Component
   TOC,
+  code: Code,
+  tag: Tag,
 } as any;
 
 export function useMDXComponents(components?: MDXComponents) {
