@@ -13,7 +13,7 @@ const SiderMenu: FC<{}> = () => {
   const activeDocsPage = trimPathname.some((path) => includesArray.includes(path));
 
   return (
-    <div className="mt-8 flex flex-col space-y-4">
+    <div className="mt-8 flex flex-col space-y-4 w-full">
       <ButtonLink icon="folder" href="/docs/introduction">
         Documentation
       </ButtonLink>

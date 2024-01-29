@@ -33,8 +33,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
               <ToastContainer />
             </AppLayout>
-
-            <ThemeSwitcher />
           </ThemeProvider>
         </Provider>
       </body>
