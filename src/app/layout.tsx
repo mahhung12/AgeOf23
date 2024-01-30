@@ -4,7 +4,6 @@ import Provider from "@/components/SessionProvider/Provider";
 import { Metadata } from "next";
 import { ToastContainer } from "react-toastify";
 
-import { ThemeSwitcher } from "@/components/AppTheme";
 import { ThemeProvider } from "@/provider/theme-provider";
 import "react-toastify/dist/ReactToastify.css";
 import "../styles/_app.scss";

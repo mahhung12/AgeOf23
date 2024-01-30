@@ -6,9 +6,9 @@ import type { MDXComponents } from "mdx/types";
 import { ReactNode } from "react";
 
 const customClassNames = {
-  h1: "text-4xl font-bold mb-4",
-  h2: "text-3xl font-bold mb-3",
-  p: "text-base mb-4",
+  h1: "text-2xl lg:text-4xl font-bold mb-4",
+  h2: "text-2xl lg:text-3xl font-bold mb-3",
+  p: "text-sm lg:text-base mb-4",
   a: "text-blue-500 underline",
   pre: "block",
   code: "block",

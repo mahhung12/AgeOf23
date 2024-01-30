@@ -11,7 +11,7 @@ export const Headline = ({
   return (
     <div
       className={cx(
-        "text-4xl font-bold tracking-tight text-black dark:text-gray-50 lg:text-7xl lg:text-gray-300",
+        "text-2xl font-bold tracking-tight text-black dark:text-gray-50 lg:text-7xl lg:text-gray-300",
         className
       )}
     >

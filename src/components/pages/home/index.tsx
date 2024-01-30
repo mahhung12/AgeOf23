@@ -18,10 +18,10 @@ const HomePage: FC = () => {
             blurDataURL="/images/hero-banner_paiobe.png"
           />
         </div>
-        <div className="bg-gray bg-gray-100 dark:bg-gray-700 relative w-2/3 space-y-4 rounded-xl p-4 text-sm leading-snug sm:text-base md:text-lg lg:w-3/4 lg:p-8 lg:leading-normal text-gray-800 dark:text-white">
+        <div className="bg-gray bg-gray-100 dark:bg-gray-700 relative w-2/3 space-y-4 rounded-xl p-4 leading-snug md:text-lg lg:w-3/4 lg:p-8 lg:leading-normal text-gray-800 dark:text-white">
           <div>Hi, i&apos;m mHung</div>
           <div>
-            A skilled <InlineCode dark>Software Developer</InlineCode> with a strong focus on product development,
+            A skilled <InlineCode>Software Developer</InlineCode> with a strong focus on product development,
             located in Ha Noi - Vietnam. I have prior experience working as a Web Developer and gained valuable insights
             into building web-based solutions.
           </div>
@@ -32,7 +32,7 @@ const HomePage: FC = () => {
         <div className="space-y-4 text-gray-800 dark:text-white">
           <Headline>Introduction</Headline>
           <p className="text-gray-800 dark:text-white">
-            At the <InlineCode dark>Age of 23</InlineCode>, I envision creating a captivating website that serves as a
+            At the <InlineCode>Age of 23</InlineCode>, I envision creating a captivating website that serves as a
             concise summary of my life, encompassing my work, education, and personal journey. It will be a platform to
             share my experiences and aspirations with others in a vibrant and engaging way.
           </p>
@@ -42,7 +42,7 @@ const HomePage: FC = () => {
             testament to my growth and accomplishments.
           </p>
           <p>
-            <InlineCode dark={false}>Just wait...</InlineCode>
+            <InlineCode>Just wait...</InlineCode>
           </p>
         </div>
       </div>
