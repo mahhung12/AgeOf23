@@ -19,11 +19,16 @@ const HomePage: FC = () => {
           />
         </div>
         <div className="bg-gray bg-gray-100 dark:bg-gray-700 relative w-2/3 space-y-4 rounded-xl p-4 leading-snug md:text-lg lg:w-3/4 lg:p-8 lg:leading-normal text-gray-800 dark:text-white">
-          <div>Hi, i&apos;m mHung</div>
           <div>
-            A skilled <InlineCode>Software Developer</InlineCode> with a strong focus on product development,
-            located in Ha Noi - Vietnam. I have prior experience working as a Web Developer and gained valuable insights
-            into building web-based solutions.
+            <b>Welcome</b>, I&apos;m Manh Hung Dao
+          </div>
+          <div>
+            A <InlineCode>Software Developer</InlineCode> with a strong focus on product development, located in Hanoi,
+            Vietnam. In Sep of 2022, i graduated from FPT University with my BS in Software Engineering.
+          </div>
+
+          <div>
+            I have prior experience working as a developer and gained valuable insights into building solutions.
           </div>
         </div>
       </div>
