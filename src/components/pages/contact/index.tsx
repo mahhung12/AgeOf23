@@ -51,7 +51,7 @@ const ContactPage = () => {
     <section className="pt-10 mt-10">
       <div className="mx-auto max-w-screen-md">
         <h2 className="mb-4 text-3xl tracking-tight font-bold text-gray-700 dark:text-white">
-          Contact <InlineCode dark>me</InlineCode>
+          Contact <InlineCode>me</InlineCode>
         </h2>
         <p className="mb-8 lg:mb-10 font-light text-gray-500 dark:text-gray-400 sm:text-[16px]">
           Everything has beauty, but not everyone sees it. Tell me what you see!
