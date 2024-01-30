@@ -1,21 +1,22 @@
 export const docs = [
   {
-    id: "company",
+    id: "companies",
     title: "Working companies",
-    contents: [
-      {
-        slug: "/company/fpt-software",
-        meta: {
-          title: "FPT Software",
-        },
-      },
-      {
-        slug: "/company/ekoios",
-        meta: {
-          title: "Ekoios Technology",
-        },
-      },
-    ],
+    slug: "/companies",
+    // contents: [
+    //   {
+    //     slug: "/company/fpt-software",
+    //     meta: {
+    //       title: "FPT Software",
+    //     },
+    //   },
+    //   {
+    //     slug: "/company/ekoios",
+    //     meta: {
+    //       title: "Ekoios Technology",
+    //     },
+    //   },
+    // ],
   },
   {
     id: "achievement",

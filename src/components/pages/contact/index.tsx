@@ -44,7 +44,6 @@ const ContactPage = () => {
   const { handleSubmit } = methods;
 
   const onSubmit: SubmitHandler<IContact> = (data) => {
-    console.log(data);
     showMessage(MESSAGE_TYPE.SUCCESS, "Lovely message, many thanks!");
   };
 

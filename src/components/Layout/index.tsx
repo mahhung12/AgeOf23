@@ -16,7 +16,7 @@ const AppLayout: FC<PropsWithChildren<AppLayoutProps>> = ({ children }) => {
 
         <AppHeader />
 
-        <div className="prosed w-full h-full p-6 sm:p-8 xl:p-16 lg:w-full lg:flex-shrink text-black dark:text-white">
+        <div className="prosed w-full h-full pt-16 p-6 sm:p-8 xl:p-16 lg:w-full lg:flex-shrink text-black dark:text-white">
           {children}
         </div>
       </div>

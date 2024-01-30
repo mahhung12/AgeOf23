@@ -6,6 +6,7 @@ import { MenuIcon, XIcon } from "lucide-react";
 import { useEffect, useState } from "react";
 import SiderMenu from "../AppSider/SiderMenu";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 const AppHeader = () => {
   const pathname = usePathname();
@@ -18,9 +19,7 @@ const AppHeader = () => {
     }
   }, [pathname]);
 
-  const handleDrawerMenu = () => {
-    setTriggerDrawer(!triggerDrawer);
-  };
+  const handleDrawerMenu = () => setTriggerDrawer(!triggerDrawer);
 
   const renderDrawerHeader = () => {
     return (
@@ -28,7 +27,9 @@ const AppHeader = () => {
         width={"100%"}
         title={
           <div className="w-full flex items-center justify-between">
-            <h2 className="text-black dark:text-white">Age Of 23</h2>
+            <Link href="/">
+              <h2 className="text-black dark:text-white hover:cursor-pointer hover:opacity-80">Age Of 23</h2>
+            </Link>
 
             <ThemeSwitcher />
           </div>

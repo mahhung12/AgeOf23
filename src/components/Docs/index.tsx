@@ -19,7 +19,7 @@ export const Docs = ({ navLinks, className, ...rest }: { className?: string; nav
     <div className={cx("my-6 space-y-6", className)} {...rest}>
       {navLinks.map((section) => (
         <div key={section.title} className="space-y-2">
-          {section.title && (
+          {section.title && section.contents ? (
             <div
               className="relative -left-0.5 flex items-center gap-1 cursor-pointer hover:opacity-70 w-full justify-between"
               onClick={() => {
@@ -32,6 +32,7 @@ export const Docs = ({ navLinks, className, ...rest }: { className?: string; nav
               <span className="text-base font-bold uppercase tracking-widest text-black dark:text-white">
                 {section.title}
               </span>
+
               <span
                 className={classNames("relative top-px ", {
                   "rotate-180": section.id === activeDocs.docActive,
@@ -40,16 +41,26 @@ export const Docs = ({ navLinks, className, ...rest }: { className?: string; nav
                 <ChevronDown size={24} color={theme === "light" ? "black" : "white"} className="h-auto rotate-180" />
               </span>
             </div>
+          ) : (
+            <Link
+              href={section.slug as string}
+              className="relative -left-0.5 flex items-center gap-1 cursor-pointer hover:opacity-70 w-full justify-between"
+            >
+              <span className="text-base font-bold uppercase tracking-widest text-black dark:text-white">
+                {section.title}
+              </span>
+            </Link>
           )}
 
-          <div className="space-y-0.5">
+          <div className="space-y-0.5 flex flex-col">
             {section.id === activeDocs.docActive &&
+              section.contents &&
               section.contents.map((doc) => (
                 <Link
                   key={doc.slug}
                   href={doc.slug}
                   className={cx(
-                    "relative w-full -left-3 inline-block whitespace-nowrap rounded border border-transparent px-2 py-1 text-base text-black hover:!border-gray-200 hover:bg-orange-100 dark:text-gray-300 dark:hover:!border-teal-800 dark:hover:bg-teal-950",
+                    "relative w-fit -left-3 inline-block whitespace-nowrap rounded border border-transparent px-2 py-1 text-base text-black hover:!border-gray-200 hover:bg-orange-100 dark:text-gray-300 dark:hover:!border-teal-800 dark:hover:bg-teal-950",
                     doc.slug === pathname && "!border-blue-200 dark:!border-teal-900 bg-orange-100 dark:bg-teal-950"
                   )}
                 >
