@@ -11,11 +11,11 @@
 }
 
 .prose h2 {
-  @apply text-2xl font-bold leading-tight text-gray-300 dark:text-gray-200 lg:text-3xl;
+  @apply text-2xl font-bold leading-tight text-gray-300 dark:text-gray-400 lg:text-3xl;
 }
 
 .prose .tabs h2 {
-  @apply text-black dark:text-gray-200;
+  @apply text-black dark:text-gray-400;
 }
 
 .prose h2 a code {

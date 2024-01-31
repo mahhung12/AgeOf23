@@ -1,8 +1,8 @@
 export const docs = [
   {
-    id: "companies",
-    title: "Working companies",
-    slug: "/companies",
+    id: "work",
+    title: "Working",
+    slug: "/work",
     // contents: [
     //   {
     //     slug: "/company/fpt-software",

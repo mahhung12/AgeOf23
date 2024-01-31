@@ -1,17 +1,17 @@
 "use client";
 
-import FPTSoftware from "@/docs/FPT-Software.mdx";
+import Work from "@/docs/Work.mdx";
 import MdxProvider from "@/docs/MdxProvider";
 import { FC } from "react";
 
-const FPTSoftwarePage: FC = () => {
+const WorkingPage: FC = () => {
   return (
     <div className="company-container">
       <MdxProvider>
-        <FPTSoftware />
+        <Work />
       </MdxProvider>
     </div>
   );
 };
 
-export default FPTSoftwarePage;
+export default WorkingPage;
