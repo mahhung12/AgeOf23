@@ -6,7 +6,7 @@ const MdxProvider: React.FC<{ children: JSX.Element }> = ({ children }) => {
 
   return (
     <MDXProvider components={component}>
-      <div className="py-7">{children}</div>
+      <div className="lg:py-0 py-7">{children}</div>
     </MDXProvider>
   );
 };

@@ -1,6 +1,5 @@
 import { TOC } from "@/components/Docs/Card";
 import { Code } from "@/components/Text/Code";
-import { InlineCode } from "@/components/Text/InlineCode";
 import { Tag } from "@/components/Text/Tag";
 import type { MDXComponents } from "mdx/types";
 import { ReactNode } from "react";
@@ -95,7 +94,6 @@ export const defaultMdxComponents: MDXComponents = {
   p: Text,
   a: Link,
   pre: Pre,
-  inlineCode: InlineCode,
 
   // Component
   TOC,
