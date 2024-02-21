@@ -1,6 +1,5 @@
 import { Headline } from "@/components/Text/Headline";
-import Link from "next/link";
-import React, { FC } from "react";
+import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 import {
   IconArrowWaveRightUp,
   IconBoxAlignRightFilled,
@@ -10,7 +9,8 @@ import {
   IconSignature,
   IconTableColumn,
 } from "@tabler/icons-react";
-import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
+import Link from "next/link";
+import React, { FC } from "react";
 
 const HomePage: FC = () => {
   return (
