@@ -6,11 +6,9 @@ import { FC } from "react";
 
 const FPTSoftwarePage: FC = () => {
   return (
-    <div className="company-container">
-      <MdxProvider>
-        <FPTSoftware />
-      </MdxProvider>
-    </div>
+    <MdxProvider>
+      <FPTSoftware />
+    </MdxProvider>
   );
 };
 
