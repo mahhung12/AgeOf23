@@ -61,6 +61,7 @@ const HomePage: FC = () => {
               key={i}
               title={item.title}
               description={item.description}
+              link={item.link}
               header={item.header}
               icon={item.icon}
               className={i === 3 || i === 6 ? "md:col-span-2" : ""}
@@ -78,9 +79,11 @@ const Skeleton = () => (
 
 const items = [
   {
-    title: "The Dawn of Innovation",
-    description: "Explore the birth of groundbreaking ideas and inventions.",
+    title: "Use React Server Components",
+    description:
+      "React Server Components have been generating significant buzz and excitement lately. They've recently been adopted as the default option in Next.js 13, so now more and more developers are using them.",
     header: <Skeleton />,
+    link: "/use-react-server-components",
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
