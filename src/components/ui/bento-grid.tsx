@@ -30,8 +30,6 @@ export const BentoGridItem = ({
   icon?: React.ReactNode;
 }) => {
   "use client";
-  console.log("link :>> ", link);
-
   return (
     <Link
       href={link}
